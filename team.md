@@ -3,7 +3,6 @@ title: "Our Team"
 
 ---
 
-Below is code 
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How do you write a lesson using Markdown and `{sandpaper}`?
