@@ -64,6 +64,12 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/team.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/why.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor-notes.html</loc>
   </url>
   <url>
@@ -77,5 +83,11 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/team.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/why.html</loc>
   </url>
 </urlset>

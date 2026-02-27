@@ -66,7 +66,8 @@ contact: 'team@carpentries.org' # FIXME
 
 # Order of episodes in your lesson
 episodes:
-- introduction.md
+- why.md
+- team.md
 
 # Information for Learners
 learners:
