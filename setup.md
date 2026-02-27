@@ -2,53 +2,28 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+Our modules are designed for learning modern programming tools for data visualization 
+through the recreation and adaption of scientific charts created by W.E.B. Du Bois 
+and his collaborators for the 1900 Paris World Expo.
 
-## Data Sets
+This site includes coding interactives in R and Python that you open and use with any 
+web browser without any software installations on your own computer. These activities
+provide code blocks, often with prompts for users to fill in the blank or edit code before 
+clicking execute. These activities are ideal for beginners who do not yet want to install and learn to a code editor and graphical
+user interface (GUI) like R Studio or Sublime.
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+If you already use R Studio or a Python editor like Sublime, we recommend that you
+instead use our language specific Lesson sites that use live coding exercises:
+* STEM Data Visualization with Du Bois in R
+* STEM Data Visualization with Du Bois in Python
 
-## Software Setup
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
+Prior to the interactive coding activities, we present "Episodes" on:
+1. Why Visualize Data: This covers how visualization can be a tool for creative 
+problem solving in STEM research. The lesson examines how Du Bois turned to visualization
+as a tool for scientific analysis and communication to challenge false theories of racial inequality.
+2. Reading and Interpreting Charts: This introduces the four major chart types employed
+by Du Bois that are still in use today. It covers why we use particular chart types
+for specific types of data.
 
 
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
 

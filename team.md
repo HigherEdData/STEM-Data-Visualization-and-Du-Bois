@@ -1,9 +1,9 @@
 ---
-title: "Using Markdown"
-teaching: 10 # teaching time in minutes
-exercises: 2 # exercise time in minutes
+title: "Our Team"
+
 ---
 
+Below is code 
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How do you write a lesson using Markdown and `{sandpaper}`?

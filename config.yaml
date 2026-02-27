@@ -18,7 +18,7 @@ carpentry: 'incubator'
 carpentry_description: 'Lesson Description'
 
 # Overall title for pages.
-title: 'Learning STEM Data Visualization from Du Bois' # FIXME
+title: 'Learning STEM Data Visualization from Du Bois'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~ # FIXME
@@ -28,19 +28,19 @@ keywords: 'software, data, lesson, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha' # FIXME
+life_cycle: 'pre-alpha' #
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md' # FIXME
+source: 'https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'ceaton2@ucmerced.edu' #
 
 # Navigation ------------------------------------------------
 #
@@ -66,7 +66,10 @@ contact: 'team@carpentries.org' # FIXME
 
 # Order of episodes in your lesson
 episodes:
-- introduction.md
+- why.md
+- R.md
+- Python.md
+- team.md
 
 # Information for Learners
 learners:
