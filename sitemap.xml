@@ -13,6 +13,12 @@
     <loc>https://carpentries.github.io/workbench-template-md/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/Python.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/R.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/aio.html</loc>
   </url>
   <url>
@@ -35,6 +41,12 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/Python.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/R.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/aio.html</loc>
