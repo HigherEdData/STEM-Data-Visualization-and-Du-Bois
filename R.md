@@ -4,9 +4,14 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
-These coding interactives use Jupyter Notebooks that you can open and use with any web browser without any software installations on your own computer. This is ideal for beginners with R who do not yet want to learn how to use the R studio interface on their own computers.
+These coding interactives use Jupyter Notebooks that you can open and use with any 
+web browser without any software installations on your own computer. This is ideal 
+for beginners with R who do not yet want to learn how to use the R studio interface 
+on their own computers.
 
-If you plan to use R in the future, however, we recommend that you instead try the activities from our [R STEM Data Visualization with Du Bois](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html) lesson site. That site has activities with Du Boisian examples for learning to use R studio for data visualization on your own computer.
+If you plan to use R in the future, however, we recommend that you instead try the 
+activities from our [R STEM Data Visualization with Du Bois](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html)
+lesson site. That site has activities with Du Boisian examples for learning to use R studio for data visualization on your own computer.
 
 ## Interactive 1: Recreate a Du Bois Bar Chart of Literacy
 

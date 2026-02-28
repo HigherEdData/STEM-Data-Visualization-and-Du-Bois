@@ -21,10 +21,10 @@ carpentry_description: 'Lesson Description'
 title: 'Learning STEM Data Visualization from Du Bois' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 2026-02-26
+created: ~ # FIXME
 
 # Comma-separated list of keywords for the lesson
-keywords: 'STEM, data visualization, lesson, Du Bois, The Carpentries'
+keywords: 'STEM, data visualization, lesson, Du Bois, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
