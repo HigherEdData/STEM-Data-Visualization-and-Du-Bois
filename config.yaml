@@ -67,7 +67,6 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes:
 - why.md
-- chart.md
 - R.md
 - Python.md
 - team.md
