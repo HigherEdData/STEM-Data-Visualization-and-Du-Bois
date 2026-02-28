@@ -9,11 +9,12 @@ and his collaborators for the 1900 Paris World Expo.
 This site includes coding interactives in R and Python that you open and use with any 
 web browser without any software installations on your own computer. These activities
 provide code blocks, often with prompts for users to fill in the blank or edit code before 
-clicking execute. These activities are ideal for beginners who do not yet want to install and learn to a code editor and graphical
-user interface (GUI) like R Studio or Sublime.
+clicking execute. These activities are ideal for beginners who do not yet want to install 
+and learn to use a code editor and graphical user interface (GUI) on your own computer.
 
-If you already use R Studio or a Python editor like Sublime, we recommend that you
-instead use our language specific Lesson sites that use live coding exercises:
+If you already use a code editor and GUI like R Studio, Sublime, or Jupyter Lab, 
+we recommend that you instead use our language specific Lesson sites that use live
+coding exercises:
 
 - [STEM Data Visualization with Du Bois in R](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html)
 - STEM Data Visualization with Du Bois in Python

@@ -4,6 +4,8 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
+BELOW IS SAMPLE FORMATTING FROM CARPENTRIES SITES
+
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How do you write a lesson using Markdown and `{sandpaper}`?
