@@ -66,6 +66,7 @@ contact: 'ceaton2@ucmerced.edu'
 
 # Order of episodes in your lesson
 episodes:
+- readings.md
 - why.md
 - chart.md
 - R.md
