@@ -1,5 +1,5 @@
 ---
-title: "Why Visualize Data"
+title: "Why Visualize Data: Lecture"
 teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
