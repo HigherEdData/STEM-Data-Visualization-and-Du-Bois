@@ -31,7 +31,7 @@ Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?
 
 ## Interactive 4: Time-series area chart of time-value of money
 
-Complete the [interactive(https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_dubois.ipynb&branch=main).
+Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_dubois.ipynb&branch=main).
 
 ## Interactive 5: Statistical map of  US Black population
 
