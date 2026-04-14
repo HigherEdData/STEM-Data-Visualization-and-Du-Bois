@@ -11,6 +11,7 @@ web browser without any software installations on your own computer. These activ
 provide code blocks, often with prompts for users to fill in the blank or edit code before 
 clicking execute. These activities are ideal for beginners who do not yet want to install 
 and learn to use a code editor and graphical user interface (GUI) on your own computer.
+The interactives use our [Jupyter Lite with Du Bois Notebooks](https://highereddata.github.io/dubois-jupyterlite/).
 
 If you already use a code editor and GUI like R Studio, Sublime, or Jupyter Lab, 
 we recommend that you instead use our language specific Lesson sites that use live
