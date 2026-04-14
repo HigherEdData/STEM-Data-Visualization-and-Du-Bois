@@ -245,7 +245,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="readings.html">1. Why Visualize Data: Readings</a>
+        <a href="chart.html">1. Reading and Interpreting STEM Charts</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -257,7 +257,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="why.html">2. Why Visualize Data: Lecture</a>
+        <a href="R.html">2. R coding interactives</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -269,7 +269,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="chart.html">3. Reading and Interpreting STEM Charts</a>
+        <a href="Python.html">3. Python interactives</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -281,7 +281,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="R.html">4. R coding interactives</a>
+        <a href="stata.html">4. Stata activity</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -293,43 +293,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="Python.html">5. Python interactives</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush7">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading7">
-        <a href="stata.html">6. Stata activity</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush8">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading8">
-        <a href="evaluation.html">7. Learning Evaluation</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush9">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading9">
-        <a href="team.html">8. Our Team</a>
+        <a href="evaluation.html">5. Learning Evaluation</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -393,444 +357,7 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-readings"><p>Content from <a href="readings.html">Why Visualize Data: Readings</a></p>
-<hr>
-<p>Last updated on 2026-03-02 |
-
-        <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/readings.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<p>Before proceeding to the lectures and coding interactives below, take
-about 10 minutes to read the essay below about why data visualization is
-important in STEM, and what can be learned from W.E.B. Du Bois’
-innovative visualizations from the 1900 Paris World Exposition. At the
-bottom of the reading, you can also browse some of Du Bois’ charts from
-the exposition.</p>
-<p>After reading the essay, take another 10 minutes to read this article
-by Anthony Starks’ on the #DuBoisChallenge from <em>Nightingale: Journal
-of the Data Visualization Society.</em> The article explains how
-scientists, students, and data visualization enthusiasts began an annual
-challenge to recreate and learn from Du Bois’ visualizations using
-modern programming tools like Python and R.</p>
-<div class="section level1">
-<h1 id="why-visualize-data-creative-and-visual-thinking-in-the-case-of-du-bois">Why Visualize Data: Creative and Visual Thinking in the Case of Du
-Bois<a class="anchor" aria-label="anchor" href="#why-visualize-data-creative-and-visual-thinking-in-the-case-of-du-bois"></a>
-</h1>
-<p>Academic and professional undertakings often present us with
-questions that are hard to answer with words alone. Creativity is often
-valuable for answering the hardest questions, including scientific ones.
-And visualization of concepts and data can be an important creative tool
-for formulating and answering questions. Because science and most
-professions involve collective undertakings, you will also need to
-communicate your ideas and analysis to others. Visualizations can again
-be a powerful creative tool towards this end. Cascades of mind numbing
-data will often lose your audience and collaborators.</p>
-<p>Recent scholarship (Conwell and Loughren 2024; Itzigsohn and Brown
-2020; Morris 2017) and social media initiatives (Starks 2022) have
-recentered Black sociologist W. E. B. Du Bois’s foundational
-contributions to social scientific and statistical methods at the turn
-of the 20th century. After receiving a PhD from Harvard, DuBois was
-among the first professors in the nation to train students in empirical
-methodologies. He involved his students in field work, including large
-scale quantitative surveys, wherein they collected and analyzed data on
-the Black community and race relations. Because these students were
-taught to think scientifically and engage in data analysis, the most
-advanced of the group became valuable collaborators (Morris 2017;
-Battle-Baptiste and Rusert 2018). Du Bois and this team used rigorous
-yet accessible methods, including data visualization, to empirically
-challenge the false claims of eugenics and scientific racism.</p>
-<p>The Du Bois team notably used innovative data visualizations to tell
-data stories about Black Americans for broad audiences. By linking
-visualizations with a coherent narrative, data stories help audiences to
-better understand and remember ideas and evidence from visualizations.
-They chronicled the educational and economic success of Black Americans
-following emancipation from slavery (Battle-Baptiste and Rusert 2018).
-Du Bois drew heavily on infographics and artistic media (see
-architecture scholar Mabel O. Wilson in Battle-Baptiste and Rusert
-2018). For example, the Du Bois team prepared more than 50 data
-visualization posters for an Exhibit featured at the 1900 Paris
-Exposition world’s fair. The Du Bois visualizations won the Exposition’s
-Gold Medal for their quality. The posters are now preserved in the
-Library of Congress.</p>
-<p>Just as the Du Bois team used data stories to chronicle Black success
-after slavery, we can use Du Bois’ own story to learn data visualization
-methods for a range of scientific applications. Below, you can browse a
-subset of the Du Bois posters from the 1900 Paris Exposition. Du Bois
-uses variations of all of the major chart types still in use today: 1)
-bar charts, 2) line charts, 3) pie charts, and 4) statistical maps.
-Together, the posters presented a unified narrative of Black
-empowerment. The poster series prefigured subsequent research findings
-regarding the importance of visualization and storytelling in STEM
-education (Friendly and Wainer 2021; Hill and Grinnell 2014).</p>
-<p>With the posters, Du Bois and his collaborators made some of the
-other earliest known deployments of statistical methods in social
-science. For example, the posters employ categorical data analysis and
-visualization. Du Bois’ innovative techniques also include clustered bar
-charts to present partial tables that control for confounding factors.
-Du Bois used this method to disprove racist myths about Black family
-structure by showing higher marriage rates among Blacks than among
-Germans after controlling for age. Du Bois employed this partial table
-technique sixty years before it became state of the art (Treiman 2014).
-Du Bois also produced some of the earliest cartographical visualizations
-of geosocial data. Triangulation of qualitative and quantitative
-data</p>
-<p>Du Bois’ collaborators included women, such as social worker Jane
-Addams and sociologist Isabel Eaton. The two women contributed to the
-expansion of survey research and advancement of statistical methods
-around the turn of the 20th century (Morris 2017; Williams and MacLean
-2015).</p>
-<p>Du Bois insisted that science be built on careful, empirical research
-but must go further to garner notice beyond narrow circles of academics.
-As noted above, Du Bois and his Atlanta University team thus produced
-modern graphs, charts, maps, photographs and other items that appeared
-to sparkle for the 1900 Paris Exposition (Battle-Baptiste and Rusert
-2018). As Morris has documented (2017), the intent was to convey weighty
-social scientific ideas in a fashion far more attractive than
-dispassionate arguments and dense statistical tables.</p>
-<div class="section level3">
-<h3 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
-</h3>
-<p><strong>Battle-Baptiste, W., &amp; Rusert, B. (Eds.).</strong>
-(2018). <em>W. E. B. Du Bois’s data portraits: Visualizing Black
-America</em>. Chronicle Books.</p>
-<p><strong>Conwell, J. A., &amp; Loughran, K.</strong> (2024).
-Quantitative inquiry in the early sociology of W. E. B. Du Bois. <em>Du
-Bois Review: Social Science Research on Race, 21(2),</em> 368-390.</p>
-<p><strong>Du Bois Visualization Style Guide</strong> (<a href="https://github.com/ajstarks/dubois-data-portraits/blob/master/style/dubois-style.pdf" class="external-link uri">https://github.com/ajstarks/dubois-data-portraits/blob/master/style/dubois-style.pdf</a>)</p>
-<p><strong>Friendly, M., &amp; Wainer, H.</strong> (2021). <em>A history
-of data visualization and graphic communication</em> (Vol. 56).
-Cambridge: Harvard University Press.</p>
-<p><strong>Hill, S., &amp; Grinnell, C.</strong> (2014, October). Using
-digital storytelling with infographics in STEM professional writing
-pedagogy. In <em>2014 IEEE International Professional Communication
-Conference (IPCC)</em> (pp. 1-7). IEEE.</p>
-<p><strong>Itzigsohn, J., &amp; Brown, K. L.</strong> (2020). <em>The
-sociology of W. E. B. Du Bois: Racialized modernity and the global color
-line</em>. NYU Press.</p>
-<p><strong>Morris, A.</strong> (2017). <em>The scholar denied: W. E. B.
-Du Bois and the birth of modern sociology</em>. University of California
-Press.</p>
-<p><strong>Starks, A.</strong> (2022). The #DuBois Challenge.
-<em>Nightingale: Journal of the Data Visualization Society</em>.</p>
-<p><strong>Treiman, D. J.</strong> (2014). <em>Quantitative data
-analysis: Doing social research to test ideas</em>. John Wiley &amp;
-Sons.</p>
-<p><strong>Williams, J. E., &amp; MacLean, V. M.</strong> (2015).
-<em>Settlement sociology in the progressive years: Faith, science, and
-reform</em> (Vol. 75). Brill.</p>
-</div>
-<div class="section level2">
-<h2 id="a-sample-of-the-du-bois-visualizations-from-the-paris-exposition">A Sample of the Du Bois Visualizations from the Paris
-Exposition<a class="anchor" aria-label="anchor" href="#a-sample-of-the-du-bois-visualizations-from-the-paris-exposition"></a>
-</h2>
-<p>Note that the plate numbers referenced below are from [W. E. B. Du
-Bois’s Data Portraits: Visualizing Black America] (<a href="https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america" class="external-link uri">https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america</a>)</p>
-</div>
-<div class="section level2">
-<h2 id="figure-1-time-series-graph">Figure 1: Time series graph<a class="anchor" aria-label="anchor" href="#figure-1-time-series-graph"></a>
-</h2>
-<figure><img src="../fig/original-plate-40.jpg" alt="plate40" class="figure mx-auto d-block"><div class="figcaption">plate40</div>
-</figure><p>One of the rare line charts in the collection, the comparative
-population growth of white and Black Americans from 1790-1890, is
-annotated with relevant events like “Suppression of Slave Trade”,
-Immigration” and “Emancipation”.</p>
-</div>
-<div class="section level2">
-<h2 id="figure-2-time-series-percent-area-graph">Figure 2: Time Series Percent Area Graph<a class="anchor" aria-label="anchor" href="#figure-2-time-series-percent-area-graph"></a>
-</h2>
-<figure><img src="../fig/original-plate-51.jpg" alt="plate51" class="figure mx-auto d-block"><div class="figcaption">plate51</div>
-</figure><p>With the green waters of Freedom plunging down a waterfall set on the
-dark base of slavery, “Proportion of Freeman and Slaves Among American
-Negroes” shows number of enslaved and free from 1790 to 1870.</p>
-</div>
-<div class="section level2">
-<h2 id="figure-3-percentage-bar-graph-of-dichotomous-variable-statusliteracy-by-select-categories-national-racial-community">Figure 3: Percentage Bar Graph of Dichotomous Variable
-Status(literacy) By Select Categories (National / Racial Community)<a class="anchor" aria-label="anchor" href="#figure-3-percentage-bar-graph-of-dichotomous-variable-statusliteracy-by-select-categories-national-racial-community"></a>
-</h2>
-<figure><img src="../fig/original-plate-47.jpg" alt="plate47" class="figure mx-auto d-block"><div class="figcaption">plate47</div>
-</figure><p>Comparing the state of Black Americans with the larger world,
-“Illiteracy of American Negroes compared with that of other nations”
-shows Black American’s illiteracy in red, in the middle of a sea of
-green, higher than countries like France, but better than others like
-Russia.</p>
-</div>
-<div class="section level2">
-<h2 id="figure-4-categorical-map-of-population-location-with-population-size-legend">Figure 4: Categorical Map of Population Location With Population
-Size Legend<a class="anchor" aria-label="anchor" href="#figure-4-categorical-map-of-population-location-with-population-size-legend"></a>
-</h2>
-<figure><img src="../fig/original-plate-02.jpg" alt="plate02" class="figure mx-auto d-block"><div class="figcaption">plate02</div>
-</figure><p>A choropleth outlining the population of Black Americans, by state.
-Note the concentration in the South, with Georgia leading (750,000 or
-more).</p>
-</div>
-<div class="section level2">
-<h2 id="figure-5-fan-chart-for-categorical-percentage-distributions-in-two-comparison-groups">Figure 5: Fan Chart for Categorical Percentage Distributions in Two
-Comparison Groups<a class="anchor" aria-label="anchor" href="#figure-5-fan-chart-for-categorical-percentage-distributions-in-two-comparison-groups"></a>
-</h2>
-<figure><img src="../fig/original-plate-27.jpg" alt="plate01" class="figure mx-auto d-block"><div class="figcaption">plate01</div>
-</figure><p>The fan chart compares Black and white population’s occupations,
-using color and area to faciliate comparisons.</p>
-</div>
-<div class="section level2">
-<h2 id="figure-6-cartographical-visualization-of-population-location-and-movement">Figure 6: Cartographical Visualization of Population Location and
-Movement<a class="anchor" aria-label="anchor" href="#figure-6-cartographical-visualization-of-population-location-and-movement"></a>
-</h2>
-<figure><img src="../fig/original-plate-01.jpg" alt="plate01" class="figure mx-auto d-block"><div class="figcaption">plate01</div>
-</figure><p>“The Georgia Negro, A Social Study” shows the transatlantic slave
-trade, with routes from Europe, Africa, the Americas and the Caribbean,
-highlighting Georgia. This visual contains Du Bois’ famous assertion:
-“The problem of the 20th century is the problem of the color line”</p>
-</div>
-<div class="section level2">
-<h2 id="figure-7-multivariate-stacked-bar-graph-by-continuous-covariate-brackets-with-photographic-and-other-data-element-details">Figure 7: Multivariate stacked bar graph by continuous covariate
-brackets, with photographic and other data element details<a class="anchor" aria-label="anchor" href="#figure-7-multivariate-stacked-bar-graph-by-continuous-covariate-brackets-with-photographic-and-other-data-element-details"></a>
-</h2>
-<figure><img src="../fig/original-plate-31.jpg" alt="plate31" class="figure mx-auto d-block"><div class="figcaption">plate31</div>
-</figure><p>The horizontal stacked bar charts show how various economic groups
-spend their income among these categories: Rent, Food, Clothes, Taxes,
-and other expenses and giving. This visual is distinct in that it
-includes photographs along with the chart.</p>
-</div>
-<div class="section level2">
-<h2 id="figure-8-partial-table-bar-graph-i-e--bivariate-categorical-relationship-marriage-status-by-racial-national-group-broken-control-variable-age">Figure 8: Partial Table Bar Graph – i.e. Bivariate Categorical
-Relationship (Marriage Status by Racial / National Group) Broken Control
-Variable (Age)<a class="anchor" aria-label="anchor" href="#figure-8-partial-table-bar-graph-i-e--bivariate-categorical-relationship-marriage-status-by-racial-national-group-broken-control-variable-age"></a>
-</h2>
-<figure><img src="../fig/original-plate-10.jpg" alt="plate10" class="figure mx-auto d-block"><div class="figcaption">plate10</div>
-</figure><p>The “Conjugal Condition” visual compares three groups (single,
-married, widowed and divorced), divided by age: (15-40, 40-80, and over
-80) within two populations: Black Americans and the country of Germany.
-The data is shown clearly using six proportional bar graphs in the red,
-yellow and green color scheme.</p>
-</div>
-<div class="section level2">
-<h2 id="figure-9-barspiral-chart-uses-color-and-contrasting-lengths-to-highlight-quantitative-demographic-differences-">Figure 9: Bar/Spiral chart Uses color and contrasting lengths to
-highlight quantitative demographic differences.<a class="anchor" aria-label="anchor" href="#figure-9-barspiral-chart-uses-color-and-contrasting-lengths-to-highlight-quantitative-demographic-differences-"></a>
-</h2>
-<figure><img src="../fig/original-plate-11.jpg" alt="plate11" class="figure mx-auto d-block"><div class="figcaption">plate11</div>
-</figure>
-</div>
-<div class="section level2">
-<h2 id="figure-10-bar-chart">Figure 10: Bar Chart<a class="anchor" aria-label="anchor" href="#figure-10-bar-chart"></a>
-</h2>
-<p>“Acres of Land Owned by Negroes in Georgia” is a conventional bar
-chart with a twist. The chart shows the increase of land owned between
-1874(338,769 acres) and 1899 (1,023,741), with the red shape of the data
-echoing the map of Georgia.</p>
-<figure><img src="../fig/original-plate-19.jpg" alt="plate19" class="figure mx-auto d-block"><div class="figcaption">plate19</div>
-</figure>
-</div>
-<div class="section level2">
-<h2 id="figure-11-county-level-choropleth-echoing-the-previous-chart-this-map-shows-land-owned-by-the-formally-enslaved-over-three-decades-post-emancipation-">Figure 11: County-level Choropleth Echoing the previous chart, this
-map shows land owned by the formally enslaved over three decades
-post-emancipation.<a class="anchor" aria-label="anchor" href="#figure-11-county-level-choropleth-echoing-the-previous-chart-this-map-shows-land-owned-by-the-formally-enslaved-over-three-decades-post-emancipation-"></a>
-</h2>
-<figure><img src="../fig/original-plate-20.jpg" alt="plate20" class="figure mx-auto d-block"><div class="figcaption">plate20</div>
-</figure>
-</div>
-<div class="section level2">
-<h2 id="figure-12-spiral-chart">Figure 12: Spiral Chart<a class="anchor" aria-label="anchor" href="#figure-12-spiral-chart"></a>
-</h2>
-<p>“Assessed Value of Household and Kitchen Furniture Owned by Georgia
-Negroes” uses the spiral form to emphasize the gains in material goods
-over a quarter century.</p>
-<figure><img src="../fig/original-plate-25.jpg" alt="plate25" class="figure mx-auto d-block"><div class="figcaption">plate25</div>
-</figure><!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</div>
-</div></section><section id="aio-why"><p>Content from <a href="why.html">Why Visualize Data: Lecture</a></p>
-<hr>
-<p>Last updated on 2026-03-02 |
-
-        <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/why.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<p>BELOW IS SAMPLE FORMATTING FROM CARPENTRIES SITES</p>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<span class="callout-header">Key Points</span>
-<div class="callout-inner">
-<div class="callout-content">
-<ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
-</ul>
-</div>
-</div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-chart"><p>Content from <a href="chart.html">Reading and Interpreting STEM Charts</a></p>
+<section id="aio-chart"><p>Content from <a href="chart.html">Reading and Interpreting STEM Charts</a></p>
 <hr>
 <p>Last updated on 2026-02-28 |
 
@@ -1130,7 +657,7 @@ any links that you are not going to use.
  -->
 </div></section><section id="aio-R"><p>Content from <a href="R.html">R coding interactives</a></p>
 <hr>
-<p>Last updated on 2026-02-28 |
+<p>Last updated on 2026-04-14 |
 
         <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/R.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -1142,20 +669,29 @@ use with any web browser without any software installations on your own
 computer. This is ideal for beginners with R who do not yet want to
 learn how to use the R studio interface on their own computers.</p>
 <p>If you plan to use R in the future, however, we recommend that you
-instead try the activities from our <a href="https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html" class="external-link">R
+instead try the activities from our <a href="https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois" class="external-link">R
 STEM Data Visualization with Du Bois</a> lesson site. That site has
 activities with Du Boisian examples for learning to use R studio for
 data visualization on your own computer.</p>
-<section><h2 class="section-heading" id="interactive-1-recreate-a-du-bois-bar-chart-of-literacy">Interactive 1: Recreate a Du Bois Bar Chart of Literacy<a class="anchor" aria-label="anchor" href="#interactive-1-recreate-a-du-bois-bar-chart-of-literacy"></a>
+<section><h2 class="section-heading" id="interactive-1-bar-charts-of-literacy-and-college-attainment">Interactive 1: Bar Charts of Literacy and College Attainment<a class="anchor" aria-label="anchor" href="#interactive-1-bar-charts-of-literacy-and-college-attainment"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the interactive <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">here</a>.</p>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_college_bar.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
 <p>This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe></p>
-</section><section><h2 class="section-heading" id="interactive-2-adapt-a-biodiversity-and-redlining-bar-chart">Interactive 2: Adapt a Biodiversity and Redlining Bar Chart<a class="anchor" aria-label="anchor" href="#interactive-2-adapt-a-biodiversity-and-redlining-bar-chart"></a>
+</section><section><h2 class="section-heading" id="interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining">Interactive 2: Bar Charts of Literacy and Biodiversity and
+Redlining<a class="anchor" aria-label="anchor" href="#interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the interactive <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">here</a>.</p>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_biodiversity_bar.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
 <p>This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe></p>
 <!--
@@ -1164,7 +700,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-Python"><p>Content from <a href="Python.html">Python interactives</a></p>
 <hr>
-<p>Last updated on 2026-03-02 |
+<p>Last updated on 2026-04-14 |
 
         <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/Python.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -1181,28 +717,50 @@ you instead try the activities from our <a href="">Python STEM Data
 Visualization with Du Bois</a> lesson site. That site has activities
 with Du Boisian examples for learning to use Jupyter Lab for data
 visualization on your own computer.</p>
-<section><h2 class="section-heading" id="interactive-1-du-bois-bar-chart-of-literacy">Interactive 1: Du Bois Bar Chart of Literacy<a class="anchor" aria-label="anchor" href="#interactive-1-du-bois-bar-chart-of-literacy"></a>
+<section><h2 class="section-heading" id="interactive-1-bar-charts-of-literacy-and-college-attainment">Interactive 1: Bar Charts of Literacy and College Attainment<a class="anchor" aria-label="anchor" href="#interactive-1-bar-charts-of-literacy-and-college-attainment"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fpython_literacy_dubois.ipynb&amp;branch=main" class="external-link">interactive</a>.</p>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_literacy_college_bar.ipynb" class="external-link">Jupyter
+Lite</a> (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fpython_literacy_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
 <p>This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe></p>
-</section><section><h2 class="section-heading" id="interactive-2-biodiversity-and-redlining-bar-chart">Interactive 2: Biodiversity and Redlining Bar Chart<a class="anchor" aria-label="anchor" href="#interactive-2-biodiversity-and-redlining-bar-chart"></a>
+</section><section><h2 class="section-heading" id="interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining">Interactive 2: Bar Charts of Literacy and Biodiversity and
+Redlining<a class="anchor" aria-label="anchor" href="#interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_biodiversity_dubois.ipynb&amp;branch=main" class="external-link">interactive</a>.</p>
-</section><section><h2 class="section-heading" id="interactive-3-time-series-line-chart">Interactive 3: Time Series Line Chart<a class="anchor" aria-label="anchor" href="#interactive-3-time-series-line-chart"></a>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_literacy_biodiversity_bar.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_biodiversity_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
+</section><section><h2 class="section-heading" id="interactive-3-time-series-line-chart-of-us-black-population">Interactive 3: Time Series Line Chart of US Black population<a class="anchor" aria-label="anchor" href="#interactive-3-time-series-line-chart-of-us-black-population"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_xy_dubois.ipynb&amp;branch=main" class="external-link">interactive</a>.</p>
-</section><section><h2 class="section-heading" id="interactive-4-time-series-area-chart-of-time-value-of-money">Interactive 4: Time-series area chart of time-value of money<a class="anchor" aria-label="anchor" href="#interactive-4-time-series-area-chart-of-time-value-of-money"></a>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_time_series_line.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_xy_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
+</section><section><h2 class="section-heading" id="interactive-4-time-series-area-charts-of-emancipation-and-the-time-value-of-money">Interactive 4: Time-series Area Charts of Emancipation and the
+Time-Value of Money<a class="anchor" aria-label="anchor" href="#interactive-4-time-series-area-charts-of-emancipation-and-the-time-value-of-money"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_dubois.ipynb&amp;branch=main" class="external-link">interactive</a>.</p>
-</section><section><h2 class="section-heading" id="interactive-5-statistical-map-of-us-black-population">Interactive 5: Statistical map of US Black population<a class="anchor" aria-label="anchor" href="#interactive-5-statistical-map-of-us-black-population"></a>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_time_series_area.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
+</section><section><h2 class="section-heading" id="interactive-5-statistical-map-of-us-black-population">Interactive 5: Statistical Map of US Black population<a class="anchor" aria-label="anchor" href="#interactive-5-statistical-map-of-us-black-population"></a>
 </h2>
 <hr class="half-width">
-<p>Complete the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_popmap_dubois.ipynb&amp;branch=main" class="external-link">interactive</a>.</p>
+<p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_popmap.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_popmap_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -1713,24 +1271,7 @@ keys for coding interactives that will be accessible only to
 instructors.</p>
 <p>We should figure out a system for providing answer keys to
 instructors for coding interactives or another learning evaluatin
-activity that doesn’t use Canvas.</p></section><section id="aio-team"><p>Content from <a href="team.html">Our Team</a></p>
-<hr>
-<p>Last updated on 2026-02-28 |
-
-        <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/team.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>THIS IS WHERE WE WILL WRITE OUR TEAM INFO.</p>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section>
+activity that doesn’t use Canvas.</p></section>
 </div>
     </main>
 </div>
@@ -1779,7 +1320,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://HigherEdData.github.io/STEM-Data-Visualization-and-Du-Bois/instructor/aio.html",
   "identifier": "https://HigherEdData.github.io/STEM-Data-Visualization-and-Du-Bois/instructor/aio.html",
-  "dateCreated": "2026-03-09",
+  "dateCreated": "2026-04-14",
   "dateModified": "2026-04-14",
   "datePublished": "2026-04-14"
 }

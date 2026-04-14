@@ -119,11 +119,11 @@
   Learning STEM Data Visualization from Du Bois
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 42%" class="percentage">
-    42%
+<aside class="col-md-12 lesson-progress"><div style="width: 29%" class="percentage">
+    29%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 42%" aria-valuenow="42" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 29%" aria-valuenow="29" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -207,25 +207,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="readings.html">1. Why Visualize Data: Readings</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush3">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading3">
-        <a href="why.html">2. Why Visualize Data: Lecture</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush4">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading4">
-        <a href="chart.html">3. Reading and Interpreting STEM Charts</a>
+        <a href="chart.html">1. Reading and Interpreting STEM Charts</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -237,17 +219,36 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        4. R coding interactives
+        2. R coding interactives
         </span>
       </button>
     </div><!--/div.accordion-header-->
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#interactive-1-recreate-a-du-bois-bar-chart-of-literacy">Interactive 1: Recreate a Du Bois Bar Chart of Literacy</a></li>
-<li><a href="#interactive-2-adapt-a-biodiversity-and-redlining-bar-chart">Interactive 2: Adapt a Biodiversity and Redlining Bar Chart</a></li>
+        <ul><li><a href="#interactive-1-bar-charts-of-literacy-and-college-attainment">Interactive 1: Bar Charts of Literacy and College Attainment</a></li>
+<li><a href="#interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining">Interactive 2: Bar Charts of Literacy and Biodiversity and
+Redlining</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="Python.html">3. Python interactives</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="stata.html">4. Stata activity</a>
+    </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -255,34 +256,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="Python.html">5. Python interactives</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush7">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading7">
-        <a href="stata.html">6. Stata activity</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush8">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading8">
-        <a href="evaluation.html">7. Learning Evaluation</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush9">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading9">
-        <a href="team.html">8. Our Team</a>
+        <a href="evaluation.html">5. Learning Evaluation</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -346,7 +320,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>R coding interactives</h1>
-        <p>Last updated on 2026-02-28 |
+        <p>Last updated on 2026-04-14 |
 
         <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/R.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -365,16 +339,25 @@ use with any web browser without any software installations on your own
 computer. This is ideal for beginners with R who do not yet want to
 learn how to use the R studio interface on their own computers.</p>
 <p>If you plan to use R in the future, however, we recommend that you
-instead try the activities from our <a href="https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html" class="external-link">R
+instead try the activities from our <a href="https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois" class="external-link">R
 STEM Data Visualization with Du Bois</a> lesson site. That site has
 activities with Du Boisian examples for learning to use R studio for
 data visualization on your own computer.</p>
-<section><h2 class="section-heading" id="interactive-1-recreate-a-du-bois-bar-chart-of-literacy">Interactive 1: Recreate a Du Bois Bar Chart of Literacy<a class="anchor" aria-label="anchor" href="#interactive-1-recreate-a-du-bois-bar-chart-of-literacy"></a></h2>
-<hr class="half-width"><p>Complete the interactive <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">here</a>.</p>
+<section><h2 class="section-heading" id="interactive-1-bar-charts-of-literacy-and-college-attainment">Interactive 1: Bar Charts of Literacy and College Attainment<a class="anchor" aria-label="anchor" href="#interactive-1-bar-charts-of-literacy-and-college-attainment"></a></h2>
+<hr class="half-width"><p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_college_bar.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
 <p>This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe></p>
-</section><section><h2 class="section-heading" id="interactive-2-adapt-a-biodiversity-and-redlining-bar-chart">Interactive 2: Adapt a Biodiversity and Redlining Bar Chart<a class="anchor" aria-label="anchor" href="#interactive-2-adapt-a-biodiversity-and-redlining-bar-chart"></a></h2>
-<hr class="half-width"><p>Complete the interactive <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">here</a>.</p>
+</section><section><h2 class="section-heading" id="interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining">Interactive 2: Bar Charts of Literacy and Biodiversity and
+Redlining<a class="anchor" aria-label="anchor" href="#interactive-2-bar-charts-of-literacy-and-biodiversity-and-redlining"></a></h2>
+<hr class="half-width"><p>Try it using <a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_biodiversity_bar.ipynb" class="external-link">Jupyter
+Lite</a>. (Recommended. No installation required.)</p>
+<p>Try it using the <a href="https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&amp;urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&amp;branch=main" class="external-link">Du
+Bois Cloud</a>. (Recommended only if you have problems with Jupyter
+Lite. No installation required)</p>
 <p>This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe></p>
 <!--
@@ -440,8 +423,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://HigherEdData.github.io/STEM-Data-Visualization-and-Du-Bois/instructor/R.html",
   "identifier": "https://HigherEdData.github.io/STEM-Data-Visualization-and-Du-Bois/instructor/R.html",
-  "dateCreated": "2026-03-09",
-  "dateModified": "2026-02-28",
+  "dateCreated": "2026-04-14",
+  "dateModified": "2026-04-14",
   "datePublished": "2026-04-14"
 }
 
