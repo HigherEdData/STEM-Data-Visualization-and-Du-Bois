@@ -14,25 +14,45 @@ the activities from our [Python STEM Data Visualization with Du Bois]() lesson s
 That site has activities with Du Boisian examples for learning to use Jupyter Lab for
 data visualization on your own computer.
 
-## Interactive 1: Du Bois Bar Chart of Literacy
+## Interactive 1: Bar Charts of Literacy and College Attainment
 
-Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fpython_literacy_dubois.ipynb&branch=main).
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_literacy_college_bar.ipynb)
+(Recommended. No installation required.)
+
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fpython_literacy_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)
 
 This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe>
 
-## Interactive 2: Biodiversity and Redlining Bar Chart
+## Interactive 2: Bar Charts of Literacy and Biodiversity and Redlining
 
-Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_biodiversity_dubois.ipynb&branch=main).
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_literacy_biodiversity_bar.ipynb).
+(Recommended. No installation required.)
 
-## Interactive 3: Time Series Line Chart
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_biodiversity_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)
 
-Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_xy_dubois.ipynb&branch=main).
+## Interactive 3: Time Series Line Chart of US Black population
 
-## Interactive 4: Time-series area chart of time-value of money
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_time_series_line.ipynb).
+(Recommended. No installation required.)
 
-Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_dubois.ipynb&branch=main).
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_xy_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)
 
-## Interactive 5: Statistical map of  US Black population
+## Interactive 4: Time-series Area Charts of Emancipation and the Time-Value of Money
 
-Complete the [interactive](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_popmap_dubois.ipynb&branch=main).
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_time_series_area.ipynb).
+(Recommended. No installation required.)
+
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_time_series_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)
+
+## Interactive 5: Statistical Map of US Black population
+
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_popmap.ipynb).
+(Recommended. No installation required.)
+
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_popmap_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)

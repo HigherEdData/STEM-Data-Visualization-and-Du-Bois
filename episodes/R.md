@@ -10,19 +10,27 @@ for beginners with R who do not yet want to learn how to use the R studio interf
 on their own computers.
 
 If you plan to use R in the future, however, we recommend that you instead try the 
-activities from our [R STEM Data Visualization with Du Bois](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html)
+activities from our [R STEM Data Visualization with Du Bois](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
 lesson site. That site has activities with Du Boisian examples for learning to use R studio for data visualization on your own computer.
 
-## Interactive 1: Recreate a Du Bois Bar Chart of Literacy
+## Interactive 1: Bar Charts of Literacy and College Attainment
 
-Complete the interactive [here](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&branch=main).
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_college_bar.ipynb).
+(Recommended. No installation required.)
+
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)
 
 This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe>
 
-## Interactive 2: Adapt a Biodiversity and Redlining Bar Chart
+## Interactive 2: Bar Charts of Literacy and Biodiversity and Redlining
 
-Complete the interactive [here](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&branch=main).
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_biodiversity_bar.ipynb).
+(Recommended. No installation required.)
+
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&branch=main).
+(Recommended only if you have problems with Jupyter Lite. No installation required)
 
 This video tutorial will walk you through the interactive.
 <iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe>

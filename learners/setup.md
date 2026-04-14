@@ -16,13 +16,13 @@ If you already use a code editor and GUI like R Studio, Sublime, or Jupyter Lab,
 we recommend that you instead use our language specific Lesson sites that use live
 coding exercises:
 
-- [STEM Data Visualization with Du Bois in R](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois/introduction.html)
-- STEM Data Visualization with Du Bois in Python
+- [STEM Data Visualization with Du Bois in R](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
+- STEM Data Visualization with Du Bois in Python (coming soon)
 
 Prior to the interactive coding activities, we present "Episodes" on:
 
-1. Why Visualize Data: This covers how visualization can be a tool for creative 
-problem solving in STEM research. The lesson examines how Du Bois turned to visualization
+1. Data Visualization Now: This covers how visualization can be a tool for scientific
+discovery in STEM research. The lesson examines how Du Bois turned to visualization
 as a tool for scientific analysis and communication to challenge false theories of racial inequality.
 2. Reading and Interpreting Charts: This introduces the four major chart types employed
 by Du Bois that are still in use today. It covers why we use particular chart types
