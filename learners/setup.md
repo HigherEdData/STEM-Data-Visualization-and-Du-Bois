@@ -2,4 +2,8 @@
 title: Setup
 ---
 
-This is a new lesson built with [The Carpentries Workbench][workbench]. 
+## About this site
+
+[workbench]: https://carpentries.github.io/sandpaper-docs
+
+The STEM Data Visualization + Du Bois site is built with the [The Carpentries Workbench][workbench].
