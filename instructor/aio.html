@@ -6,21 +6,27 @@
 <title>Learning STEM Data Visualization from Du Bois: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="../assets/styles.css">
-<script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      config: ["MMLorHTML.js"],
-      jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
-      extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
-      TeX: {
-        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-      },
-      tex2jax: {
-        inlineMath: [['\\(', '\\)']],
-        displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
-        processEscapes: true
-      }
-    });
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><!-- Responsive Favicon for The Carpentries --><link rel="apple-touch-icon" sizes="180x180" href="../favicons/incubator/apple-touch-icon.png">
+<script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><!-- NOTE: https://docs.mathjax.org/en/latest/output/mathml.html#mathml-support --><!-- Changes from V2 to V4: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
+        Jax output/NativeMML is not yet implemented
+        Jax output/PreviewHTML is not yet implemented
+        Extension fast-preview is not yet implemented (but may be in a future release)
+    --><script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)']],
+            displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
+            processEscapes: true,
+            packages: ['base', 'ams', 'noerrors', 'noundefined']
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        },
+        loader: {
+            load: ['a11y/assistive-mml', '[tex]/noerrors']
+        }
+    };
+    </script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><!-- Responsive Favicon for The Carpentries --><link rel="apple-touch-icon" sizes="180x180" href="../favicons/incubator/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/incubator/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/incubator/favicon-16x16.png">
 <link rel="manifest" href="../favicons/incubator/site.webmanifest">
@@ -47,8 +53,8 @@
       </div>
     </div>
     <div class="selector-container">
-      <div id="theme-selector">
-        <li class="nav-item dropdown" id="theme-button-list">
+      <menu class="theme-selector" id="theme-selector-menu">
+<li class="nav-item dropdown theme-button-list" id="theme-button-list-menu">
           <button class="btn btn-link nav-link px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
             <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg><i data-feather="chevron-down"></i>
           </button>
@@ -73,10 +79,8 @@
             </li>
           </ul>
 </li>
-      </div>
-
-
-      <div class="dropdown" id="instructor-dropdown">
+    </menu>
+<div class="dropdown" id="instructor-dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
         </button>
@@ -142,29 +146,18 @@
     <a id="search-button" class="btn btn-primary" href="../instructor/aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div>
 <!--/div.container-fluid -->
-</nav><div class="col-md-12 mobile-title">
-  Learning STEM Data Visualization from Du Bois
-</div>
-
-<aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
-    %
-  </div>
-  <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: %" aria-valuenow="" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
-    </div>
-  </div>
-</aside><div class="container">
+</nav><div class="container">
       <div class="row">
         <!-- START: inst/pkgdown/templates/navbar.html -->
 <div id="sidebar-col" class="col-lg-4">
   <div id="sidebar" class="sidebar">
-      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle" data-collapse="Collapse " data-episodes="Episodes ">
+      <nav aria-labelledby="flush-collapse-chapters-toggle"><button role="button" aria-label="Collapse" alt="Collapse" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle" data-collapse="Collapse " data-episodes="Episodes ">
           <i class="search-icon" data-feather="x" role="img"></i>
         </button>
         <div class="sidebar-inner">
           <div class="row mobile-row" id="theme-row-mobile">
-            <div class="col" id="theme-selector">
-              <li class="nav-item dropdown" id="theme-button-list">
+            <menu class="col theme-selector" id="theme-selector-sidebar">
+<li class="nav-item dropdown theme-button-list" id="theme-button-list-sidebar">
                 <button class="btn btn-link nav-link px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
                   <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg><span class="d-lg-none ms-1" id="bd-theme-text">Toggle Theme</span>
                 </button>
@@ -189,19 +182,19 @@
                   </li>
                 </ul>
 </li>
-            </div>
-          </div>
+            </menu>
+</div>
           <div class="row mobile-row">
             <div class="col">
               <div class="sidenav-view-selector">
-                <div class="accordion accordion-flush" id="accordionFlush9">
+                <div class="accordion accordion-flush" id="accordion-instructor-toggle">
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingNine">
-                      <button class="accordion-button collapsed" id="instructor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    <h2 class="accordion-header" id="flush-heading-instructor-toggle">
+                      <button class="accordion-button collapsed" id="instructor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-instructor-toggle" aria-expanded="false" aria-controls="flush-collapse-instructor-toggle">
                         <i id="eye" aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View
                       </button>
                     </h2>
-                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlush2">
+                    <div id="flush-collapse-instructor-toggle" class="accordion-collapse collapse" data-bs-parent="#accordion-instructor-toggle">
                       <div class="accordion-body">
                         <a href="../aio.html">Learner View</a>
                       </div>
@@ -219,15 +212,15 @@
 </div>
 <!--/div.mobile-row -->
 
-          <div class="accordion accordion-flush" id="accordionFlush11">
+          <div class="accordion accordion-flush" id="accordion-chapters-toggle">
             <div class="accordion-item">
 
-              <button id="chapters" class="accordion-button show" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                <h2 class="accordion-header chapters" id="flush-headingEleven">
+              <button id="chapters" class="accordion-button show" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-chapters-toggle" aria-expanded="false" aria-controls="flush-collapse-chapters-toggle">
+                <h2 class="accordion-header chapters" id="flush-heading-chapters-toggle">
                   EPISODES
                 </h2>
               </button>
-              <div id="flush-collapseEleven" class="accordion-collapse show collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlush11">
+              <div id="flush-collapse-chapters-toggle" class="accordion-collapse show collapse" data-bs-parent="#accordion-chapters-toggle">
 
                 <div class="accordion-body">
                   <div class="accordion accordion-flush" id="accordionFlush1">
@@ -245,7 +238,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="chart.html">1. Reading and Interpreting STEM Charts</a>
+        <a href="readings.html">1. Why Visualize Data: Readings</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -257,7 +250,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="R.html">2. R coding interactives</a>
+        <a href="chart.html">2. Reading and Interpreting STEM Charts</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -269,7 +262,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="Python.html">3. Python interactives</a>
+        <a href="R.html">3. R coding interactives</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -281,7 +274,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="stata.html">4. Stata activity</a>
+        <a href="Python.html">4. Python interactives</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -293,7 +286,19 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="evaluation.html">5. Learning Evaluation</a>
+        <a href="stata.html">5. Stata activity</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="evaluation.html">6. Learning Evaluation</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -307,14 +312,14 @@
             </div>
 
             <hr class="half-width">
-<div class="accordion accordion-flush lesson-resources" id="accordionFlush12">
+<div class="accordion accordion-flush lesson-resources" id="accordion-resources-toggle">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwelve">
-                  <button class="accordion-button collapsed" id="lesson-resources" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                <h2 class="accordion-header" id="flush-heading-resources-toggle">
+                  <button class="accordion-button collapsed" id="lesson-resources" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-resources-toggle" aria-expanded="false" aria-controls="flush-collapse-resources-toggle">
                     RESOURCES
                   </button>
                 </h2>
-                <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
+                <div id="flush-collapse-resources-toggle" class="accordion-collapse collapse" data-bs-parent="#accordion-resources-toggle">
                   <div class="accordion-body">
                     <ul>
 <li>
@@ -355,11 +360,260 @@
         <!-- START: inst/pkgdown/templates/content-extra.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <main id="main-content" class="main-content"><div class="container lesson-content">
+        <h1>All in One View</h1>
         
-        
-<section id="aio-chart"><p>Content from <a href="chart.html">Reading and Interpreting STEM Charts</a></p>
+<section id="aio-readings"><p>Content from <a href="readings.html">Why Visualize Data: Readings</a></p>
 <hr>
-<p>Last updated on 2026-02-28 |
+<p>Last updated on 2026-04-16 |
+
+        <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/readings.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<p>Before proceeding to the lectures and coding interactives below, take
+about 10 minutes to read the essay below about why data visualization is
+important in STEM, and what can be learned from W.E.B. Du Bois’
+innovative visualizations from the 1900 Paris World Exposition. At the
+bottom of the reading, you can also browse some of Du Bois’ charts from
+the exposition.</p>
+<p>After reading the essay, take another 10 minutes to read this article
+by Anthony Starks’ on the #DuBoisChallenge from <em>Nightingale: Journal
+of the Data Visualization Society.</em> The article explains how
+scientists, students, and data visualization enthusiasts began an annual
+challenge to recreate and learn from Du Bois’ visualizations using
+modern programming tools like Python and R.</p>
+<div class="section level1">
+<h1 id="why-visualize-data-creative-and-visual-thinking-in-the-case-of-du-bois">Why Visualize Data: Creative and Visual Thinking in the Case of Du
+Bois<a class="anchor" aria-label="anchor" href="#why-visualize-data-creative-and-visual-thinking-in-the-case-of-du-bois"></a>
+</h1>
+<p>Academic and professional undertakings often present us with
+questions that are hard to answer with words alone. Creativity is often
+valuable for answering the hardest questions, including scientific ones.
+And visualization of concepts and data can be an important creative tool
+for formulating and answering questions. Because science and most
+professions involve collective undertakings, you will also need to
+communicate your ideas and analysis to others. Visualizations can again
+be a powerful creative tool towards this end. Cascades of mind numbing
+data will often lose your audience and collaborators.</p>
+<p>Recent scholarship (Conwell and Loughren 2024; Itzigsohn and Brown
+2020; Morris 2017) and social media initiatives (Starks 2022) have
+recentered Black sociologist W. E. B. Du Bois’s foundational
+contributions to social scientific and statistical methods at the turn
+of the 20th century. After receiving a PhD from Harvard, DuBois was
+among the first professors in the nation to train students in empirical
+methodologies. He involved his students in field work, including large
+scale quantitative surveys, wherein they collected and analyzed data on
+the Black community and race relations. Because these students were
+taught to think scientifically and engage in data analysis, the most
+advanced of the group became valuable collaborators (Morris 2017;
+Battle-Baptiste and Rusert 2018). Du Bois and this team used rigorous
+yet accessible methods, including data visualization, to empirically
+challenge the false claims of eugenics and scientific racism.</p>
+<p>The Du Bois team notably used innovative data visualizations to tell
+data stories about Black Americans for broad audiences. By linking
+visualizations with a coherent narrative, data stories help audiences to
+better understand and remember ideas and evidence from visualizations.
+They chronicled the educational and economic success of Black Americans
+following emancipation from slavery (Battle-Baptiste and Rusert 2018).
+Du Bois drew heavily on infographics and artistic media (see
+architecture scholar Mabel O. Wilson in Battle-Baptiste and Rusert
+2018). For example, the Du Bois team prepared more than 50 data
+visualization posters for an Exhibit featured at the 1900 Paris
+Exposition world’s fair. The Du Bois visualizations won the Exposition’s
+Gold Medal for their quality. The posters are now preserved in the
+Library of Congress.</p>
+<p>Just as the Du Bois team used data stories to chronicle Black success
+after slavery, we can use Du Bois’ own story to learn data visualization
+methods for a range of scientific applications. Below, you can browse a
+subset of the Du Bois posters from the 1900 Paris Exposition. Du Bois
+uses variations of all of the major chart types still in use today: 1)
+bar charts, 2) line charts, 3) pie charts, and 4) statistical maps.
+Together, the posters presented a unified narrative of Black
+empowerment. The poster series prefigured subsequent research findings
+regarding the importance of visualization and storytelling in STEM
+education (Friendly and Wainer 2021; Hill and Grinnell 2014).</p>
+<p>With the posters, Du Bois and his collaborators made some of the
+other earliest known deployments of statistical methods in social
+science. For example, the posters employ categorical data analysis and
+visualization. Du Bois’ innovative techniques also include clustered bar
+charts to present partial tables that control for confounding factors.
+Du Bois used this method to disprove racist myths about Black family
+structure by showing higher marriage rates among Blacks than among
+Germans after controlling for age. Du Bois employed this partial table
+technique sixty years before it became state of the art (Treiman 2014).
+Du Bois also produced some of the earliest cartographical visualizations
+of geosocial data. Triangulation of qualitative and quantitative
+data</p>
+<p>Du Bois’ collaborators included women, such as social worker Jane
+Addams and sociologist Isabel Eaton. The two women contributed to the
+expansion of survey research and advancement of statistical methods
+around the turn of the 20th century (Morris 2017; Williams and MacLean
+2015).</p>
+<p>Du Bois insisted that science be built on careful, empirical research
+but must go further to garner notice beyond narrow circles of academics.
+As noted above, Du Bois and his Atlanta University team thus produced
+modern graphs, charts, maps, photographs and other items that appeared
+to sparkle for the 1900 Paris Exposition (Battle-Baptiste and Rusert
+2018). As Morris has documented (2017), the intent was to convey weighty
+social scientific ideas in a fashion far more attractive than
+dispassionate arguments and dense statistical tables.</p>
+<div class="section level3">
+<h3 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h3>
+<p><strong>Battle-Baptiste, W., &amp; Rusert, B. (Eds.).</strong>
+(2018). <em>W. E. B. Du Bois’s data portraits: Visualizing Black
+America</em>. Chronicle Books.</p>
+<p><strong>Conwell, J. A., &amp; Loughran, K.</strong> (2024).
+Quantitative inquiry in the early sociology of W. E. B. Du Bois. <em>Du
+Bois Review: Social Science Research on Race, 21(2),</em> 368-390.</p>
+<p><strong>Du Bois Visualization Style Guide</strong> (<a href="https://github.com/ajstarks/dubois-data-portraits/blob/master/style/dubois-style.pdf" class="external-link uri">https://github.com/ajstarks/dubois-data-portraits/blob/master/style/dubois-style.pdf</a>)</p>
+<p><strong>Friendly, M., &amp; Wainer, H.</strong> (2021). <em>A history
+of data visualization and graphic communication</em> (Vol. 56).
+Cambridge: Harvard University Press.</p>
+<p><strong>Hill, S., &amp; Grinnell, C.</strong> (2014, October). Using
+digital storytelling with infographics in STEM professional writing
+pedagogy. In <em>2014 IEEE International Professional Communication
+Conference (IPCC)</em> (pp. 1-7). IEEE.</p>
+<p><strong>Itzigsohn, J., &amp; Brown, K. L.</strong> (2020). <em>The
+sociology of W. E. B. Du Bois: Racialized modernity and the global color
+line</em>. NYU Press.</p>
+<p><strong>Morris, A.</strong> (2017). <em>The scholar denied: W. E. B.
+Du Bois and the birth of modern sociology</em>. University of California
+Press.</p>
+<p><strong>Starks, A.</strong> (2022). The #DuBois Challenge.
+<em>Nightingale: Journal of the Data Visualization Society</em>.</p>
+<p><strong>Treiman, D. J.</strong> (2014). <em>Quantitative data
+analysis: Doing social research to test ideas</em>. John Wiley &amp;
+Sons.</p>
+<p><strong>Williams, J. E., &amp; MacLean, V. M.</strong> (2015).
+<em>Settlement sociology in the progressive years: Faith, science, and
+reform</em> (Vol. 75). Brill.</p>
+</div>
+<div class="section level2">
+<h2 id="a-sample-of-the-du-bois-visualizations-from-the-paris-exposition">A Sample of the Du Bois Visualizations from the Paris
+Exposition<a class="anchor" aria-label="anchor" href="#a-sample-of-the-du-bois-visualizations-from-the-paris-exposition"></a>
+</h2>
+<p>Note that the plate numbers referenced below are from [W. E. B. Du
+Bois’s Data Portraits: Visualizing Black America] (<a href="https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america" class="external-link uri">https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america</a>)</p>
+</div>
+<div class="section level2">
+<h2 id="figure-1-time-series-graph">Figure 1: Time series graph<a class="anchor" aria-label="anchor" href="#figure-1-time-series-graph"></a>
+</h2>
+<figure><img src="../fig/original-plate-40.jpg" alt="plate40" class="figure mx-auto d-block"><div class="figcaption">plate40</div>
+</figure><p>One of the rare line charts in the collection, the comparative
+population growth of white and Black Americans from 1790-1890, is
+annotated with relevant events like “Suppression of Slave Trade”,
+Immigration” and “Emancipation”.</p>
+</div>
+<div class="section level2">
+<h2 id="figure-2-time-series-percent-area-graph">Figure 2: Time Series Percent Area Graph<a class="anchor" aria-label="anchor" href="#figure-2-time-series-percent-area-graph"></a>
+</h2>
+<figure><img src="../fig/original-plate-51.jpg" alt="plate51" class="figure mx-auto d-block"><div class="figcaption">plate51</div>
+</figure><p>With the green waters of Freedom plunging down a waterfall set on the
+dark base of slavery, “Proportion of Freeman and Slaves Among American
+Negroes” shows number of enslaved and free from 1790 to 1870.</p>
+</div>
+<div class="section level2">
+<h2 id="figure-3-percentage-bar-graph-of-dichotomous-variable-statusliteracy-by-select-categories-national-racial-community">Figure 3: Percentage Bar Graph of Dichotomous Variable
+Status(literacy) By Select Categories (National / Racial Community)<a class="anchor" aria-label="anchor" href="#figure-3-percentage-bar-graph-of-dichotomous-variable-statusliteracy-by-select-categories-national-racial-community"></a>
+</h2>
+<figure><img src="../fig/original-plate-47.jpg" alt="plate47" class="figure mx-auto d-block"><div class="figcaption">plate47</div>
+</figure><p>Comparing the state of Black Americans with the larger world,
+“Illiteracy of American Negroes compared with that of other nations”
+shows Black American’s illiteracy in red, in the middle of a sea of
+green, higher than countries like France, but better than others like
+Russia.</p>
+</div>
+<div class="section level2">
+<h2 id="figure-4-categorical-map-of-population-location-with-population-size-legend">Figure 4: Categorical Map of Population Location With Population
+Size Legend<a class="anchor" aria-label="anchor" href="#figure-4-categorical-map-of-population-location-with-population-size-legend"></a>
+</h2>
+<figure><img src="../fig/original-plate-02.jpg" alt="plate02" class="figure mx-auto d-block"><div class="figcaption">plate02</div>
+</figure><p>A choropleth outlining the population of Black Americans, by state.
+Note the concentration in the South, with Georgia leading (750,000 or
+more).</p>
+</div>
+<div class="section level2">
+<h2 id="figure-5-fan-chart-for-categorical-percentage-distributions-in-two-comparison-groups">Figure 5: Fan Chart for Categorical Percentage Distributions in Two
+Comparison Groups<a class="anchor" aria-label="anchor" href="#figure-5-fan-chart-for-categorical-percentage-distributions-in-two-comparison-groups"></a>
+</h2>
+<figure><img src="../fig/original-plate-27.jpg" alt="plate01" class="figure mx-auto d-block"><div class="figcaption">plate01</div>
+</figure><p>The fan chart compares Black and white population’s occupations,
+using color and area to faciliate comparisons.</p>
+</div>
+<div class="section level2">
+<h2 id="figure-6-cartographical-visualization-of-population-location-and-movement">Figure 6: Cartographical Visualization of Population Location and
+Movement<a class="anchor" aria-label="anchor" href="#figure-6-cartographical-visualization-of-population-location-and-movement"></a>
+</h2>
+<figure><img src="../fig/original-plate-01.jpg" alt="plate01" class="figure mx-auto d-block"><div class="figcaption">plate01</div>
+</figure><p>“The Georgia Negro, A Social Study” shows the transatlantic slave
+trade, with routes from Europe, Africa, the Americas and the Caribbean,
+highlighting Georgia. This visual contains Du Bois’ famous assertion:
+“The problem of the 20th century is the problem of the color line”</p>
+</div>
+<div class="section level2">
+<h2 id="figure-7-multivariate-stacked-bar-graph-by-continuous-covariate-brackets-with-photographic-and-other-data-element-details">Figure 7: Multivariate stacked bar graph by continuous covariate
+brackets, with photographic and other data element details<a class="anchor" aria-label="anchor" href="#figure-7-multivariate-stacked-bar-graph-by-continuous-covariate-brackets-with-photographic-and-other-data-element-details"></a>
+</h2>
+<figure><img src="../fig/original-plate-31.jpg" alt="plate31" class="figure mx-auto d-block"><div class="figcaption">plate31</div>
+</figure><p>The horizontal stacked bar charts show how various economic groups
+spend their income among these categories: Rent, Food, Clothes, Taxes,
+and other expenses and giving. This visual is distinct in that it
+includes photographs along with the chart.</p>
+</div>
+<div class="section level2">
+<h2 id="figure-8-partial-table-bar-graph-i-e--bivariate-categorical-relationship-marriage-status-by-racial-national-group-broken-control-variable-age">Figure 8: Partial Table Bar Graph – i.e. Bivariate Categorical
+Relationship (Marriage Status by Racial / National Group) Broken Control
+Variable (Age)<a class="anchor" aria-label="anchor" href="#figure-8-partial-table-bar-graph-i-e--bivariate-categorical-relationship-marriage-status-by-racial-national-group-broken-control-variable-age"></a>
+</h2>
+<figure><img src="../fig/original-plate-10.jpg" alt="plate10" class="figure mx-auto d-block"><div class="figcaption">plate10</div>
+</figure><p>The “Conjugal Condition” visual compares three groups (single,
+married, widowed and divorced), divided by age: (15-40, 40-80, and over
+80) within two populations: Black Americans and the country of Germany.
+The data is shown clearly using six proportional bar graphs in the red,
+yellow and green color scheme.</p>
+</div>
+<div class="section level2">
+<h2 id="figure-9-barspiral-chart-uses-color-and-contrasting-lengths-to-highlight-quantitative-demographic-differences-">Figure 9: Bar/Spiral chart Uses color and contrasting lengths to
+highlight quantitative demographic differences.<a class="anchor" aria-label="anchor" href="#figure-9-barspiral-chart-uses-color-and-contrasting-lengths-to-highlight-quantitative-demographic-differences-"></a>
+</h2>
+<figure><img src="../fig/original-plate-11.jpg" alt="plate11" class="figure mx-auto d-block"><div class="figcaption">plate11</div>
+</figure>
+</div>
+<div class="section level2">
+<h2 id="figure-10-bar-chart">Figure 10: Bar Chart<a class="anchor" aria-label="anchor" href="#figure-10-bar-chart"></a>
+</h2>
+<p>“Acres of Land Owned by Negroes in Georgia” is a conventional bar
+chart with a twist. The chart shows the increase of land owned between
+1874(338,769 acres) and 1899 (1,023,741), with the red shape of the data
+echoing the map of Georgia.</p>
+<figure><img src="../fig/original-plate-19.jpg" alt="plate19" class="figure mx-auto d-block"><div class="figcaption">plate19</div>
+</figure>
+</div>
+<div class="section level2">
+<h2 id="figure-11-county-level-choropleth-echoing-the-previous-chart-this-map-shows-land-owned-by-the-formally-enslaved-over-three-decades-post-emancipation-">Figure 11: County-level Choropleth Echoing the previous chart, this
+map shows land owned by the formally enslaved over three decades
+post-emancipation.<a class="anchor" aria-label="anchor" href="#figure-11-county-level-choropleth-echoing-the-previous-chart-this-map-shows-land-owned-by-the-formally-enslaved-over-three-decades-post-emancipation-"></a>
+</h2>
+<figure><img src="../fig/original-plate-20.jpg" alt="plate20" class="figure mx-auto d-block"><div class="figcaption">plate20</div>
+</figure>
+</div>
+<div class="section level2">
+<h2 id="figure-12-spiral-chart">Figure 12: Spiral Chart<a class="anchor" aria-label="anchor" href="#figure-12-spiral-chart"></a>
+</h2>
+<p>“Assessed Value of Household and Kitchen Furniture Owned by Georgia
+Negroes” uses the spiral form to emphasize the gains in material goods
+over a quarter century.</p>
+<figure><img src="../fig/original-plate-25.jpg" alt="plate25" class="figure mx-auto d-block"><div class="figcaption">plate25</div>
+</figure><!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</div></section><section id="aio-chart"><p>Content from <a href="chart.html">Reading and Interpreting STEM Charts</a></p>
+<hr>
+<p>Last updated on 2026-04-16 |
 
         <a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/edit/main/episodes/chart.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -371,7 +625,7 @@
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>We find that this lesson site is pedagogically very effective when
 used as lecture notes and learning activity instructions. We do not
@@ -384,14 +638,14 @@ the production of the Du Bois charts and the Paris World Expo, and 2)
 examples of Du Bois charts. We provide these images within the lesson
 site so that you can open them in separate browser tabs for display
 while you lecture.</p>
-<p>Alternatively, you can copy and modify <a href="https://docs.google.com/presentation/d/1mVh4c4bYjM5DDp6ix33fo1ZYS8NE15QdKYOUB1lx7H4/edit?slide=id.g2f60d06f563_0_22#slide=id.g2f60d06f563_0_22" class="external-link">this
+<p>Alternatively, you can copy and modify <a href="https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/" class="external-link">this
 Google Slides deck</a> with all of the images for this episode.</p>
-<p>Subsequent episodes will have links to separate Google Slide Decks
-with their images.</p>
 </div>
 </div>
 </div>
 </div>
+<p>This content is also available in <a href="https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/" class="external-link">Google
+Slides</a> that can be copied and edited.</p>
 <div class="overview card">
 <h2 class="card-header">Overview</h2>
 <div class="row g-0">
@@ -543,7 +797,7 @@ Exposition, 1900</a></p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>How does Black illiteracy (the red bar) compare with other
 countries</p>
@@ -556,7 +810,7 @@ countries</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <figure><img src="../files/barchart.jpg" alt="barchart" class="figure mx-auto d-block"><div class="figcaption">barchart</div>
 </figure><div class="section level3">
@@ -895,9 +1149,9 @@ your .do file.</li>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>This is code that adds 2+2</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="kw">display</span> 2+2 <span class="co">// the result of 2 +2 should be 4</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a>This is code that adds 2+2</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a><span class="kw">display</span> 2+2 <span class="co">// the result of 2 +2 should be 4</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="importing-du-bois-data-into-stata">3. Importing Du Bois’ data into Stata<a class="anchor" aria-label="anchor" href="#importing-du-bois-data-into-stata"></a>
 </h2>
@@ -945,11 +1199,11 @@ command to list all the data loaded in stata.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>________ delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="ot">list</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>________ delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a><span class="ot">list</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="creating-a-bar-graph">4. Creating a Bar Graph<a class="anchor" aria-label="anchor" href="#creating-a-bar-graph"></a>
 </h2>
@@ -988,11 +1242,11 @@ category variable. Then run the code in your Stata Notebook</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) _______, <span class="co">///</span></span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>    <span class="bn">over</span>(_________)</span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1" aria-label="code-block-3-4"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) _______, <span class="co">///</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1" aria-label="code-block-3-5"></a>    <span class="bn">over</span>(_________)</span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="changing-the-background-color-and-aspect-ratio">5. Changing the background color and aspect ratio<a class="anchor" aria-label="anchor" href="#changing-the-background-color-and-aspect-ratio"></a>
 </h2>
@@ -1007,12 +1261,12 @@ below to do this. Then run it in you .do file.</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy, <span class="co">///</span></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>    <span class="bn">over</span>(country) <span class="co">///</span></span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>    <span class="dv">scheme</span>(_______)</span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy, <span class="co">///</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1" aria-label="code-block-4-5"></a>    <span class="bn">over</span>(country) <span class="co">///</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1" aria-label="code-block-4-6"></a>    <span class="dv">scheme</span>(_______)</span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="ordering-the-bars-and-making-the-bar-for-black-americans-a-different-color">6. Ordering the Bars and Making the Bar for Black Americans a
 Different Color<a class="anchor" aria-label="anchor" href="#ordering-the-bars-and-making-the-bar-for-black-americans-a-different-color"></a>
@@ -1037,21 +1291,21 @@ illiteracy_neg.</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">// below generatees a Negative illiteracy value for descending sort</span></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="kw">gen</span> illiteracy_neg = -illiteracy </span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">// below creates separate illiteracy variables to graph, illiteracy1 for Black U.S. illiteracy0 for others</span></span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="kw">separate</span> illiteracy,  <span class="kw">by</span>(country==<span class="st">"Negroes, U.S.A."</span>)</span>
-<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">// fill in the blanks below with the new illiteracy1 variable name</span></span>
-<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy0 illiteracy_, <span class="co">///</span></span>
-<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(________))  <span class="co">/// fill in the blank here to add the illiteracy_neg sorting variable</span></span>
-<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
-<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
-<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
-<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a>    nofill <span class="co">// nofill tells Stata to not have a line break between different variables bars</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1" aria-label="code-block-5-4"></a><span class="co">// below generatees a Negative illiteracy value for descending sort</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1" aria-label="code-block-5-5"></a><span class="kw">gen</span> illiteracy_neg = -illiteracy </span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1" aria-label="code-block-5-6"></a><span class="co">// below creates separate illiteracy variables to graph, illiteracy1 for Black U.S. illiteracy0 for others</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1" aria-label="code-block-5-7"></a><span class="kw">separate</span> illiteracy,  <span class="kw">by</span>(country==<span class="st">"Negroes, U.S.A."</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1" aria-label="code-block-5-8"></a></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1" aria-label="code-block-5-9"></a><span class="co">// fill in the blanks below with the new illiteracy1 variable name</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1" aria-label="code-block-5-10"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy0 illiteracy_, <span class="co">///</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1" aria-label="code-block-5-11"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(________))  <span class="co">/// fill in the blank here to add the illiteracy_neg sorting variable</span></span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1" aria-label="code-block-5-12"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1" aria-label="code-block-5-13"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1" aria-label="code-block-5-14"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1" aria-label="code-block-5-15"></a>    nofill <span class="co">// nofill tells Stata to not have a line break between different variables bars</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="turn-the-legend-off-grid-lines-off--make-the-country-label-text-smaller-">7. Turn the legend off grid lines off. Make the Country label text
 smaller.<a class="anchor" aria-label="anchor" href="#turn-the-legend-off-grid-lines-off--make-the-country-label-text-smaller-"></a>
@@ -1076,20 +1330,20 @@ your .do file.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="kw">gen</span> illiteracy_neg = -illiteracy </span>
-<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="kw">separate</span> illiteracy,  <span class="kw">by</span>(country==<span class="st">"Negroes, U.S.A."</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy0 illiteracy1, <span class="co">///</span></span>
-<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(illiteracy_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5)))  <span class="co">///</span></span>
-<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
-<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
-<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
-<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a>    nofill <span class="co">///</span></span>
-<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a>    <span class="bn">legend</span>(___) <span class="co">/// set legend to "off"</span></span>
-<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, _______) <span class="co">// set nogrid lines with empty ylabels</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1" aria-label="code-block-6-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1" aria-label="code-block-6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1" aria-label="code-block-6-4"></a><span class="kw">gen</span> illiteracy_neg = -illiteracy </span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1" aria-label="code-block-6-5"></a><span class="kw">separate</span> illiteracy,  <span class="kw">by</span>(country==<span class="st">"Negroes, U.S.A."</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1" aria-label="code-block-6-6"></a></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1" aria-label="code-block-6-7"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy0 illiteracy1, <span class="co">///</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1" aria-label="code-block-6-8"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(illiteracy_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5)))  <span class="co">///</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1" aria-label="code-block-6-9"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1" aria-label="code-block-6-10"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1" aria-label="code-block-6-11"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1" aria-label="code-block-6-12"></a>    nofill <span class="co">///</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1" aria-label="code-block-6-13"></a>    <span class="bn">legend</span>(___) <span class="co">/// set legend to "off"</span></span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1" aria-label="code-block-6-14"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, _______) <span class="co">// set nogrid lines with empty ylabels</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="add-the-titles-and-subtitles-with-your-own-name">8. Add the Titles and Subtitles with Your Own Name<a class="anchor" aria-label="anchor" href="#add-the-titles-and-subtitles-with-your-own-name"></a>
 </h2>
@@ -1108,29 +1362,29 @@ graph to a jpeg file that you can submit for this assignment!</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="kw">gen</span> illiteracy_neg = -illiteracy </span>
-<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="kw">separate</span> illiteracy,  <span class="kw">by</span>(country==<span class="st">"Negroes, U.S.A."</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy0 illiteracy1, <span class="co">///</span></span>
-<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(illiteracy_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5))) nofill <span class="co">///</span></span>
-<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
-<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
-<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
-<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a>    <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">/// </span></span>
-<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, <span class="bn">nogrid</span>) <span class="co">/// </span></span>
-<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"{stSerif}Illiteracy of the American Negroes compared with that of other nations."</span> <span class="co">///</span></span>
-<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a>            <span class="st">" "</span>, <span class="kw">size</span>(3)) <span class="co">/// Add main title</span></span>
-<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a>    <span class="bn">subtitle</span>(<span class="st">"{stSerif}Proportion d' illettrés parmi les Nègres Americains comparée à celle des autres nations."</span> <span class="co">///</span></span>
-<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a>            <span class="st">" "</span> <span class="co">///</span></span>
-<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a>            <span class="st">"{stSerif}Done by Atlanta University."</span> <span class="co">///</span></span>
-<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a>            <span class="st">" "</span> <span class="co">///</span></span>
-<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a>            <span class="st">"{stSerif}Recreated by _______________"</span>, <span class="co">/// add your name here to generate a graph with your name</span></span>
-<span id="cb7-21"><a href="#cb7-21" tabindex="-1"></a>             <span class="kw">size</span>(2)) <span class="co">// </span></span>
-<span id="cb7-22"><a href="#cb7-22" tabindex="-1"></a></span>
-<span id="cb7-23"><a href="#cb7-23" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> dubois_literacy.pdf, <span class="kw">replace</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_literacy_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1" aria-label="code-block-7-4"></a><span class="kw">gen</span> illiteracy_neg = -illiteracy </span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1" aria-label="code-block-7-5"></a><span class="kw">separate</span> illiteracy,  <span class="kw">by</span>(country==<span class="st">"Negroes, U.S.A."</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1" aria-label="code-block-7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1" aria-label="code-block-7-7"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) illiteracy0 illiteracy1, <span class="co">///</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1" aria-label="code-block-7-8"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(illiteracy_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5))) nofill <span class="co">///</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1" aria-label="code-block-7-9"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1" aria-label="code-block-7-10"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1" aria-label="code-block-7-11"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1" aria-label="code-block-7-12"></a>    <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">/// </span></span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1" aria-label="code-block-7-13"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, <span class="bn">nogrid</span>) <span class="co">/// </span></span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1" aria-label="code-block-7-14"></a>    <span class="bn">title</span>(<span class="st">"{stSerif}Illiteracy of the American Negroes compared with that of other nations."</span> <span class="co">///</span></span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1" aria-label="code-block-7-15"></a>            <span class="st">" "</span>, <span class="kw">size</span>(3)) <span class="co">/// Add main title</span></span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1" aria-label="code-block-7-16"></a>    <span class="bn">subtitle</span>(<span class="st">"{stSerif}Proportion d' illettrés parmi les Nègres Americains comparée à celle des autres nations."</span> <span class="co">///</span></span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1" aria-label="code-block-7-17"></a>            <span class="st">" "</span> <span class="co">///</span></span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1" aria-label="code-block-7-18"></a>            <span class="st">"{stSerif}Done by Atlanta University."</span> <span class="co">///</span></span>
+<span id="cb7-19"><a href="#cb7-19" tabindex="-1" aria-label="code-block-7-19"></a>            <span class="st">" "</span> <span class="co">///</span></span>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1" aria-label="code-block-7-20"></a>            <span class="st">"{stSerif}Recreated by _______________"</span>, <span class="co">/// add your name here to generate a graph with your name</span></span>
+<span id="cb7-21"><a href="#cb7-21" tabindex="-1" aria-label="code-block-7-21"></a>             <span class="kw">size</span>(2)) <span class="co">// </span></span>
+<span id="cb7-22"><a href="#cb7-22" tabindex="-1" aria-label="code-block-7-22"></a></span>
+<span id="cb7-23"><a href="#cb7-23" tabindex="-1" aria-label="code-block-7-23"></a><span class="kw">graph</span> <span class="kw">export</span> dubois_literacy.pdf, <span class="kw">replace</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="change-the-data-to-read-in-and-display-college-degree-holding-by-country">9. Change the Data to Read in and Display College Degree Holding By
 Country<a class="anchor" aria-label="anchor" href="#change-the-data-to-read-in-and-display-college-degree-holding-by-country"></a>
@@ -1153,11 +1407,11 @@ by the OECD here: <a href="https://www.oecd.org/en/topics/sub-issues/education-a
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="co">// fill in the blank with d_college_country data file name below</span></span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/_______________.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="ot">list</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a><span class="co">// fill in the blank with d_college_country data file name below</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1" aria-label="code-block-8-3"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/_______________.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1" aria-label="code-block-8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1" aria-label="code-block-8-5"></a><span class="ot">list</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="edit-the-code-to-graph-the-college-attainment-data">10. Edit the Code to Graph the College Attainment Data<a class="anchor" aria-label="anchor" href="#edit-the-code-to-graph-the-college-attainment-data"></a>
 </h2>
@@ -1177,28 +1431,28 @@ French for his 1900 Paris Exposition audience in France.</li>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_college_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="kw">gen</span> college_neg = -college </span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="kw">separate</span> college,  <span class="kw">by</span>(country==<span class="st">"Black U.S. Residents"</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>** <span class="fu">fill</span> <span class="kw">in</span> the blanks below to <span class="kw">graph</span> the college variables</span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) __________0 __________1, <span class="co">///</span></span>
-<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(college_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5))) nofill <span class="co">///</span></span>
-<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
-<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
-<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
-<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>    <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">/// </span></span>
-<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, <span class="bn">nogrid</span>) <span class="co">/// </span></span>
-<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"{stSerif}College attainment by Black U.S. residents compared with that of other nations."</span> <span class="co">///</span></span>
-<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a>            <span class="st">" "</span>, <span class="kw">size</span>(3)) <span class="co">/// </span></span>
-<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a>    <span class="bn">subtitle</span>(<span class="st">"{stSerif}Translation in language of your choice."</span> <span class="co">/// add your translation here</span></span>
-<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a>            <span class="st">" "</span> <span class="co">///</span></span>
-<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a>            <span class="st">"{stSerif}Done by Atlanta University."</span> <span class="co">///</span></span>
-<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a>            <span class="st">" "</span> <span class="co">///</span></span>
-<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a>            <span class="st">"{stSerif}Recreated by _______________"</span>, <span class="co">/// add your name here to generate a graph with your name</span></span>
-<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a>             <span class="kw">size</span>(2)) <span class="co">//</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1" aria-label="code-block-9-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_college_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1" aria-label="code-block-9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1" aria-label="code-block-9-4"></a><span class="kw">gen</span> college_neg = -college </span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1" aria-label="code-block-9-5"></a><span class="kw">separate</span> college,  <span class="kw">by</span>(country==<span class="st">"Black U.S. Residents"</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1" aria-label="code-block-9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1" aria-label="code-block-9-7"></a>** <span class="fu">fill</span> <span class="kw">in</span> the blanks below to <span class="kw">graph</span> the college variables</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1" aria-label="code-block-9-8"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) __________0 __________1, <span class="co">///</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1" aria-label="code-block-9-9"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(college_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5))) nofill <span class="co">///</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1" aria-label="code-block-9-10"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1" aria-label="code-block-9-11"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="kw">green</span>)) <span class="co">///</span></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1" aria-label="code-block-9-12"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(<span class="kw">red</span>)) <span class="co">///</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1" aria-label="code-block-9-13"></a>    <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">/// </span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1" aria-label="code-block-9-14"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, <span class="bn">nogrid</span>) <span class="co">/// </span></span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1" aria-label="code-block-9-15"></a>    <span class="bn">title</span>(<span class="st">"{stSerif}College attainment by Black U.S. residents compared with that of other nations."</span> <span class="co">///</span></span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1" aria-label="code-block-9-16"></a>            <span class="st">" "</span>, <span class="kw">size</span>(3)) <span class="co">/// </span></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1" aria-label="code-block-9-17"></a>    <span class="bn">subtitle</span>(<span class="st">"{stSerif}Translation in language of your choice."</span> <span class="co">/// add your translation here</span></span>
+<span id="cb9-18"><a href="#cb9-18" tabindex="-1" aria-label="code-block-9-18"></a>            <span class="st">" "</span> <span class="co">///</span></span>
+<span id="cb9-19"><a href="#cb9-19" tabindex="-1" aria-label="code-block-9-19"></a>            <span class="st">"{stSerif}Done by Atlanta University."</span> <span class="co">///</span></span>
+<span id="cb9-20"><a href="#cb9-20" tabindex="-1" aria-label="code-block-9-20"></a>            <span class="st">" "</span> <span class="co">///</span></span>
+<span id="cb9-21"><a href="#cb9-21" tabindex="-1" aria-label="code-block-9-21"></a>            <span class="st">"{stSerif}Recreated by _______________"</span>, <span class="co">/// add your name here to generate a graph with your name</span></span>
+<span id="cb9-22"><a href="#cb9-22" tabindex="-1" aria-label="code-block-9-22"></a>             <span class="kw">size</span>(2)) <span class="co">//</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="improve-accessibility-by-adding-x-axis-grid-lines-and-removing-the-use-of-red-and-green">11. Improve Accessibility by Adding X Axis Grid Lines and Removing
 the Use of Red and Green<a class="anchor" aria-label="anchor" href="#improve-accessibility-by-adding-x-axis-grid-lines-and-removing-the-use-of-red-and-green"></a>
@@ -1223,29 +1477,29 @@ change this R ggplot code to change the font color to pink</strong></p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="kw">ssc</span> install dubois</span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_college_country.csv"</span>, <span class="kw">clear</span></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="kw">gen</span> college_neg = -college </span>
-<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="kw">separate</span> college,  <span class="kw">by</span>(country==<span class="st">"Black U.S. Residents"</span>)</span>
-<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) college0 college1, <span class="co">///</span></span>
-<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(college_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5))) nofill <span class="co">///</span></span>
-<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
-<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(______)) <span class="co">/// try blue</span></span>
-<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(______)) <span class="co">/// try orange</span></span>
-<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>    <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">/// </span></span>
-<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, <span class="bn">nogrid</span>) <span class="co">/// delete this line of code to restore grid lines</span></span>
-<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"{stSerif}College attainment by Black U.S. residents compared with that of other nations."</span> <span class="co">///</span></span>
-<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>            <span class="st">" "</span>, <span class="kw">size</span>(3)) <span class="co">/// </span></span>
-<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>    <span class="bn">subtitle</span>(<span class="st">"{stSerif}Translation in language of your choice."</span> <span class="co">/// add your translation here</span></span>
-<span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>            <span class="st">" "</span> <span class="co">///</span></span>
-<span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>            <span class="st">"{stSerif}Done by Atlanta University."</span> <span class="co">///</span></span>
-<span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>            <span class="st">" "</span> <span class="co">///</span></span>
-<span id="cb10-20"><a href="#cb10-20" tabindex="-1"></a>            <span class="st">"{stSerif}Recreated by _______________"</span>, <span class="co">/// remember to include your name here to generate a graph with your name</span></span>
-<span id="cb10-21"><a href="#cb10-21" tabindex="-1"></a>             <span class="kw">size</span>(2)) <span class="co">// </span></span>
-<span id="cb10-22"><a href="#cb10-22" tabindex="-1"></a></span>
-<span id="cb10-23"><a href="#cb10-23" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> dubois_college.pdf, <span class="kw">replace</span></span></code></pre>
+<pre class="sourceCode stata" tabindex="0"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="kw">ssc</span> install dubois</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a>import delimited <span class="st">"https://raw.githubusercontent.com/HigherEdData/Du-Bois-STEM/refs/heads/main/data/d_college_country.csv"</span>, <span class="kw">clear</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1" aria-label="code-block-10-3"></a></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1" aria-label="code-block-10-4"></a><span class="kw">gen</span> college_neg = -college </span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1" aria-label="code-block-10-5"></a><span class="kw">separate</span> college,  <span class="kw">by</span>(country==<span class="st">"Black U.S. Residents"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1" aria-label="code-block-10-6"></a></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1" aria-label="code-block-10-7"></a><span class="kw">graph</span> <span class="bn">hbar</span> (asis) college0 college1, <span class="co">///</span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1" aria-label="code-block-10-8"></a>    <span class="bn">over</span>(country, <span class="kw">sort</span>(college_neg) <span class="kw">label</span>(<span class="bn">labsize</span>(1.5))) nofill <span class="co">///</span></span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1" aria-label="code-block-10-9"></a>    <span class="dv">scheme</span>(dubois) <span class="co">///</span></span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1" aria-label="code-block-10-10"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(______)) <span class="co">/// try blue</span></span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1" aria-label="code-block-10-11"></a>    <span class="bn">bar</span>(2, <span class="kw">color</span>(______)) <span class="co">/// try orange</span></span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1" aria-label="code-block-10-12"></a>    <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">/// </span></span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1" aria-label="code-block-10-13"></a>    <span class="kw">ylabel</span>(<span class="st">""</span>, <span class="bn">nogrid</span>) <span class="co">/// delete this line of code to restore grid lines</span></span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1" aria-label="code-block-10-14"></a>    <span class="bn">title</span>(<span class="st">"{stSerif}College attainment by Black U.S. residents compared with that of other nations."</span> <span class="co">///</span></span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1" aria-label="code-block-10-15"></a>            <span class="st">" "</span>, <span class="kw">size</span>(3)) <span class="co">/// </span></span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1" aria-label="code-block-10-16"></a>    <span class="bn">subtitle</span>(<span class="st">"{stSerif}Translation in language of your choice."</span> <span class="co">/// add your translation here</span></span>
+<span id="cb10-17"><a href="#cb10-17" tabindex="-1" aria-label="code-block-10-17"></a>            <span class="st">" "</span> <span class="co">///</span></span>
+<span id="cb10-18"><a href="#cb10-18" tabindex="-1" aria-label="code-block-10-18"></a>            <span class="st">"{stSerif}Done by Atlanta University."</span> <span class="co">///</span></span>
+<span id="cb10-19"><a href="#cb10-19" tabindex="-1" aria-label="code-block-10-19"></a>            <span class="st">" "</span> <span class="co">///</span></span>
+<span id="cb10-20"><a href="#cb10-20" tabindex="-1" aria-label="code-block-10-20"></a>            <span class="st">"{stSerif}Recreated by _______________"</span>, <span class="co">/// remember to include your name here to generate a graph with your name</span></span>
+<span id="cb10-21"><a href="#cb10-21" tabindex="-1" aria-label="code-block-10-21"></a>             <span class="kw">size</span>(2)) <span class="co">// </span></span>
+<span id="cb10-22"><a href="#cb10-22" tabindex="-1" aria-label="code-block-10-22"></a></span>
+<span id="cb10-23"><a href="#cb10-23" tabindex="-1" aria-label="code-block-10-23"></a><span class="kw">graph</span> <span class="kw">export</span> dubois_college.pdf, <span class="kw">replace</span></span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">STATA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1298,7 +1552,7 @@ activities that doesn’t use Canvas.</p></section>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.0)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.0.9)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
 		</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -1320,9 +1574,9 @@ activities that doesn’t use Canvas.</p></section>
   "creativeWorkStatus": "active",
   "url": "https://HigherEdData.github.io/STEM-Data-Visualization-and-Du-Bois/instructor/aio.html",
   "identifier": "https://HigherEdData.github.io/STEM-Data-Visualization-and-Du-Bois/instructor/aio.html",
-  "dateCreated": "2026-04-14",
-  "dateModified": "2026-04-14",
-  "datePublished": "2026-04-14"
+  "dateCreated": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "datePublished": "2026-04-16"
 }
 
   </script><script>
