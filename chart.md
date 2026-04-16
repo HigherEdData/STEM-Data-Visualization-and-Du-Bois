@@ -34,14 +34,11 @@ that can be copied and edited.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
-Understand which of the four chart types used by Du Bois and contemporary scientists are best suited for different types of data and multivariate analyses.
 
-Interpret how Du Bois used one of these chart types for an analysis that contradicted false, biologically-based theories of racial inequality.
-
-Identify best practices for making charts accessible and engaging for broad audiences that are either present or missing from a Du Bois chart.
-
-Ground your ability to to read and understand STEM charts by hand drawing a chart.
-
+- Understand which of the four chart types used by Du Bois and contemporary scientists are best suited for different types of data and multivariate analyses.
+- Interpret how Du Bois used one of these chart types for an analysis that contradicted false, biologically-based theories of racial inequality.
+- Identify best practices for making charts accessible and engaging for broad audiences that are either present or missing from a Du Bois chart.
+- Ground your ability to to read and understand STEM charts by hand drawing a chart.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 In this section we will explore charts developed for the 1900 Paris Exposition by  Du Bois and his collaborators, as examples
