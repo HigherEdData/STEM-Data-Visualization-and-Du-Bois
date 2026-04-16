@@ -66,8 +66,8 @@ contact: 'ceaton2@ucmerced.edu'
 
 # Order of episodes in your lesson
 episodes:
-#- readings.md
-#- dataviznow.Rmd
+- readings.md
+# - dataviznow.Rmd
 - chart.md
 - R.md
 - Python.md
