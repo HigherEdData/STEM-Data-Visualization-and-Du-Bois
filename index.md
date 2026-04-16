@@ -3,7 +3,7 @@ site: sandpaper::sandpaper_site
 ---
 
 <div>
-<img src="files/setm + dupois.png">
+<img src="files/stem + dubois.png">
 </div>
 
 Supported by the National Science Foundation, the **STEM Data Visualization and Du Bois**
