@@ -2,7 +2,7 @@
 site: sandpaper::sandpaper_site
 ---
 
-![STEM Data Visualization and Du Bois](files/stem-dubois.png)
+![STEM Data Visualization and Du Bois](episodes/files/stem-dubois.png)
 
 Supported by the National Science Foundation, the **STEM Data Visualization and Du Bois**
 site publishes modules for learning modern programming tools for data visualization
