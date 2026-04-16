@@ -2,7 +2,7 @@
 site: sandpaper::sandpaper_site
 ---
 
-div>
+<div>
 <img src="files/setm + dupois.png">
 </div>
 
