@@ -1,22 +1,17 @@
 ---
-title: "Why Visualize Data: Readings"
+title: "Readings"
 teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
-Before proceeding to the lectures and coding interactives below, take about 10 minutes to
-read the essay below about why data visualization is important in STEM, and what 
-can be learned from W.E.B. Du Bois' innovative visualizations from the 1900 Paris
-World Exposition. At the bottom of the reading, you can also browse some of Du Bois'
-charts from the exposition.
-
-After reading the essay, take another 10 minutes to read this article by Anthony Starks' 
-on the #DuBoisChallenge from *Nightingale: Journal of the Data Visualization Society.*
+In addition to this introductory reading, we provide references on Du Bois + STEM
+below. As part of the module, students are also invited to read "The #DuBoisChallenge"
+by Anthony Starks from *[Nightingale: Journal of the Data Visualization Society.](https://nightingaledvs.com/the-dubois-challenge/)*
 The article explains how scientists, students, and data visualization enthusiasts
 began an annual challenge to recreate and learn from Du Bois' visualizations using
 modern programming tools like Python and R.
 
-# Why Visualize Data: Creative and Visual Thinking in the Case of Du Bois
+# Creative and Visual Thinking in the Case of Du Bois
 
 Academic and professional undertakings often present us with questions that are hard to answer with words alone. Creativity is often valuable for answering the hardest questions, including scientific ones. And visualization of concepts and data can be an important creative tool for formulating and answering questions. Because science and most professions involve collective undertakings, you will also need to communicate your ideas and analysis to others. Visualizations can again be a powerful creative tool towards this end. Cascades of mind numbing data will often lose your audience and collaborators. 
 
