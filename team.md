@@ -4,8 +4,6 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
-# Our Team
-
 The STEM Data Visualization + Du Bois project is led by an interdisciplinary team from Fisk University, Princeton University, and University of California, Merced. We are supported by a grant from the [National Science Foundation](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2236219&HistoricalAwards=false).
 
 ## Principle Investigators
