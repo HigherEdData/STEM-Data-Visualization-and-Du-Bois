@@ -14,7 +14,7 @@ Dr. Leslie Collins, Associate Professor of Social and Behavioral Sciences, [**Fi
 
 ![leslie-collins](files/collins.png)
 
-Dr. Charlie Eaton, Associate Professor of Sociology, [**University of California, Merced**](https://sociology.ucmerced.edu/content/charlie-eaton)
+[Dr. Charlie Eaton](https://www.charlieeaton.net), Associate Professor of Sociology, [**University of California, Merced**](https://sociology.ucmerced.edu/content/charlie-eaton)
 
 ![charlie-eaton](files/eaton.png)
 
