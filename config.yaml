@@ -66,14 +66,14 @@ contact: 'ceaton2@ucmerced.edu'
 
 # Order of episodes in your lesson
 episodes:
-- readings.md
 - dataviznow.Rmd
-- chart.Rmd
+- chart.md
 - R.md
 - Python.md
 - stata.md
 - evaluation.md
-# - team.md
+- readings.md
+- team.md
 
 # Information for Learners
 learners:
