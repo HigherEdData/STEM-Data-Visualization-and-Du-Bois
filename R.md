@@ -22,7 +22,7 @@ Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git
 (Recommended only if you have problems with Jupyter Lite. No installation required)
 
 This video tutorial will walk you through the interactive.
-<iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1o0IPPYZ9juC5FDlZbrJyh6AdpC4pPLdC/" width="640" height="480"></iframe>
 
 ## Interactive 2: Bar Charts of Literacy and Biodiversity and Redlining
 
