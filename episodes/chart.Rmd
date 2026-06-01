@@ -4,21 +4,7 @@ teaching: 10
 exercises: 10
 ---
 
-:::: instructor
-
-We find that this lesson site is pedagogically very effective when used as 
-lecture notes and learning activity instructions. We do not recommend lecturing 
-with a screen share of the lesson site or projection of the lesson site.
-This combination of text, activity prompts, and verbal narration tends to exceed effective cognitive loads for learners.
-
-But this lesson works best with slides that include 1) photos from the production of the Du Bois charts and the Paris World Expo, and 2) examples of Du Bois charts. We provide these images within the lesson site so that you can open them in separate browser tabs for display while you lecture. 
-
-Alternatively, you can copy and modify [Google Slides deck](https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/) with all of the images for this episode.
-
-Subsequent episodes will have links to separate Google Slide Decks with their 
-images.
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z77Icn64w5c?si=KzlYNPA-kaA8-qjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ::::::::::::
 
@@ -40,10 +26,6 @@ This content is also available in [Google Slides](https://docs.google.com/presen
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Video overview
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z77Icn64w5c?si=KzlYNPA-kaA8-qjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Chart Types
 
