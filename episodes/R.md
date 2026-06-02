@@ -15,9 +15,8 @@ lesson site. That site has activities with Du Boisian examples for learning to u
 
 ## Interactive 1: Literacy and College Attainment Bar Charts
 
-<!-- Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_college_bar.ipynb).
-(Recommended. No installation required.)
--->
+<!-- Try it using Jupyter Lite: https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_college_bar.ipynb.
+(Recommended. No installation required.)-->
 
 Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_dubois.ipynb&branch=main).
 (Recommended only if you have problems with Jupyter Lite. No installation required)
@@ -29,9 +28,8 @@ src="https://drive.google.com/file/d/1o0IPPYZ9juC5FDlZbrJyh6AdpC4pPLdC/preview">
 
 ## Interactive 2: Literacy, Biodiversity and Redlining Bar Charts
 
-<!-- Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_biodiversity_bar.ipynb).
-(Recommended. No installation required.)
--->
+<!-- Try it using Jupyter Lite https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_literacy_biodiversity_bar.ipynb.
+(Recommended. No installation required.)-->
 
 Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_biodiversity_dubois.ipynb&branch=main).
 (Recommended only if you have problems with Jupyter Lite. No installation required)
