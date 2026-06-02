@@ -23,7 +23,9 @@ Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git
 (Recommended only if you have problems with Jupyter Lite. No installation required)
 
 This video tutorial will walk you through the interactive.
-<iframe src="https://drive.google.com/file/d/1ld6zO3PAOv-2vvkHhK5Guq9O3TT4GnHN/preview" width="640" height="480"></iframe>
+<iframe width="560" height="315"
+src="https://drive.google.com/file/d/1o0IPPYZ9juC5FDlZbrJyh6AdpC4pPLdC/preview">
+</iframe>
 
 ## Interactive 2: Bar Charts of Literacy and Biodiversity and Redlining
 
@@ -32,6 +34,11 @@ Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/tr
 
 Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fpython_biodiversity_dubois.ipynb&branch=main).
 (Recommended only if you have problems with Jupyter Lite. No installation required)
+
+This video tutorial will walk you through the interactive.
+<iframe width="560" height="315"
+src="https://drive.google.com/file/d/1o0IPPYZ9juC5FDlZbrJyh6AdpC4pPLdC/preview">
+</iframe>
 
 ## Interactive 3: Time Series Line Chart of US Black population
 
