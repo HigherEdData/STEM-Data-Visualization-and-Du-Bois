@@ -6,7 +6,7 @@ exercises: 10
 
 :::: instructor
 
-We find that this lesson site is pedagogically very effective when used as 
+We find that this lesson site is pedagogically effective when used as 
 lecture notes and learning activity instructions. We do not recommend lecturing 
 with a screen share of the lesson site or projection of the lesson site.
 This combination of text, activity prompts, and verbal narration tends to exceed effective
@@ -24,7 +24,9 @@ images.
 
 ### Learning from the Innovations of W.E.B. Du Bois
 
-<iframe src="https://drive.google.com/file/d/1JLg3zQuPiT-0CxUQjYuOG3W5qluMbvt7/preview" width="640" height="480"></iframe>
+<<iframe width="560" height="315"
+src="https://drive.google.com/file/d/1JLg3zQuPiT-0CxUQjYuOG3W5qluMbvt7/preview">
+</iframe>
 
 This content is also available in [Google Slides](https://docs.google.com/presentation/d/1AeePkTUoLgjxTNNlPH3IoIfZ4z3fH_1JNuowaa914jU/edit?usp=sharing) that can be copied and edited.
 
