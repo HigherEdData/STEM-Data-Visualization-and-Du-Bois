@@ -19,7 +19,7 @@ data visualization on your own computer.
 Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_literacy_college_bar.ipynb)
 (Recommended. No installation required.)
 
-Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fpython_literacy_dubois.ipynb&branch=main).
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fpy_literacy_biodiversity_bar.ipynb&branch=main).
 (Recommended only if you have problems with Jupyter Lite. No installation required)
 
 This video tutorial will walk you through the interactive.
