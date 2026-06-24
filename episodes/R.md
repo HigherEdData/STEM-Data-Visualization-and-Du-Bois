@@ -41,7 +41,7 @@ Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git
 (Recommended only if you have problems with Jupyter Lite. No installation required)
 :::
 
-Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fr_literacy_biodiversity_dubois.ipynb&branch=main).
+Try it using the [Du Bois Cloud](https://dubois.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FHigherEdData%2FDu-Bois-STEM&urlpath=tree%2FDu-Bois-STEM%2Fnotebooks%2Fr_literacy_biodiversity_bar.ipynb&branch=main).
 (No installation required)
 
 This video tutorial will walk you through the interactive.
