@@ -32,3 +32,6 @@ for specific types of data.
 [workbench]: https://carpentries.github.io/sandpaper-docs
 
 The STEM Data Visualization + Du Bois site is built with the [The Carpentries Workbench][workbench].
+
+This material is based upon work supported by the U.S. National Science Foundation under Grant No. 2236219. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+
