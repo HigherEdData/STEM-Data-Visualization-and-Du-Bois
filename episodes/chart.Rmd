@@ -4,31 +4,51 @@ teaching: 10
 exercises: 10
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z77Icn64w5c?si=KzlYNPA-kaA8-qjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::: instructor
+
+We find that this lesson site is pedagogically very effective when used as 
+lecture notes and learning activity instructions. We do not recommend lecturing 
+with a screen share of the lesson site or projection of the lesson site.
+This combination of text, activity prompts, and verbal narration tends to exceed effective cognitive loads for learners.
+
+But this lesson works best with slides that include 1) photos from the production of the Du Bois charts and the Paris World Expo, and 2) examples of Du Bois charts. We provide these images within the lesson site so that you can open them in separate browser tabs for display while you lecture. 
+
+Alternatively, you can copy and modify [Google Slides deck](https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/) with all of the images for this episode.
+
+Subsequent episodes will have links to separate Google Slide Decks with their 
+images.
+
+
+
+::::::::::::
 
 This content is also available in [Google Slides](https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/) that can be copied and edited.
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What are the major STEM chart types, all used by Du Bois?
-- What design practices can make charts more accessible and effective?
-- How did Du Bois use these practices effectively in one of his charts?
+- What are the major STEM chart types that are used by Du Bois?
+- What universal design practices can make charts more accessible and effective?
+- How to interpret STEM charts?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
-- Understand which chart types are best suited for data with different levels of measurement (nominal, ordinal, continous).
+- Understand which chart types are best suited for data with different levels of measurement (nominal, ordinal and continuous).
 - Read and interpret the analysis in one of the Du Bois charts.
-- Identify best practices for chart accessibity and impact in a Du Bois chart.
+- Identify best practices for chart accessibility and impact in a Du Bois chart.
 - Draw a STEM chart by hand using statistics that describe real data.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Chart Types
+## Video overview
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z77Icn64w5c?si=KzlYNPA-kaA8-qjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Overview of Charts
 
 - We use different types of graphs based on the types of data and relationships we are analyzing.
-- Du Bois used variants of most of the major graph types that are still used today: (pie, bar, cartesian line charts, and statistical maps).
+- Du Bois used variants of commonly used graph types: (pie, bar, Cartesian line charts, and statistical maps).
 
 ### Fan Chart and Bar Chart
 <figure>
@@ -49,9 +69,8 @@ This content is also available in [Google Slides](https://docs.google.com/presen
 
 
 ### More complex applications
-- You can also explore more complex applications of these chart types using the [Du Bois Resources repository for this lesson:] 
- (https://github.com/HigherEdData/Du-Bois-STEM)
-- The types include the fanciful Du Bois spiral, stacked bar charts, and integrated photographs.
+- You can also explore more complex applications of these chart types using the [Du Bois Resources repository for this lesson:](https://github.com/HigherEdData/Du-Bois-STEM)
+- These more complex applications include the fanciful Du Bois spiral, stacked bar charts, and integrated photographs.
 
 <figure>
 <div>
@@ -61,13 +80,12 @@ This content is also available in [Google Slides](https://docs.google.com/presen
 </div>
 </figure>
 
-## Chart Types and Types of Data
 
 ### Types of Data
 
 We use different chart types for different types of data. Two key types of data are sometimes referred to as levels of measurement:
 
-- **Categorical** (also called nominal. Examples: demographic group, species).
+- **Categorical** (also called nominal. Examples: demographic group or species).
 - **Continuous** (also called interval ratio. Examples: distance, duration, quantity).
 
 ### Types of Statistics
@@ -75,21 +93,23 @@ We use different chart types for different types of data. Two key types of data 
 Charts commonly use visual elements to represent statistics computed from either categorical or continuous data, including:
 
 - Proportions (from categorical data)
-- Frequencies (from categorical data or a quantile of continuous data)
+- Frequencies (from categorical data or a quartile of continuous data)
 - Central tendencies like means, medians (from continuous measures)
 
-### Numbers of variables
+### Number of variables
 
-- Different variants of charts are also used to represent data for multiple related variables.
-- But even pie charts, which represent a distribution across categories of a single categorical variable, can be used to represent data for multiple variables by splitting the chart into separate panels for units in different subcategories.
+Different variants of charts are also used to represent data for multiple related variables.
+But even pie charts, which represent a distribution across categories of a single categorical variable, can be used to represent data for multiple variables by splitting the chart into separate panels for units in different subcategories.
+
+## Chart Types
 
 ### Pie Charts
 
-- Pie graphs illustrate the
+- **Pie charts** illustrate the
 proportion (or percentage) of units observed in different exclusive categories (like occupations) within a population, with 
 all the percentages adding up to 100%.
 - This analyzes a distribution across one categorical variable.
-- Du Bois' fanchart variant of a pie chart below creatively compares 
+- **Du Bois' fanchart variant of a pie chart** below creatively compares 
 distributions of people across one categorical variable (occupations)
 within categories for another variable (race).
 
@@ -97,47 +117,45 @@ within categories for another variable (race).
 
 
 
-### Chart Types: Bar Charts
+### Bar Charts
 
 - Bar graphs compare statistics for one variable
 across bar categories for another variable.
 - As in the graph below, a bar graph can represent **statistics for a categorical variable** like frequencies or percentages of literacy **within bar categories** of the other variable (in this case nation). This bar graph thus visualizes elements of a **contingency table.**
-- A bar graph can also represent **statistics of continous variables** like means **within bar categories** of another variable.
-- **Cluster bar charts** can be used for comparisons across additional categorial variables.
+- A bar graph can also represent **statistics of continuous variables** like means **within bar categories** of another variable.
+- **Cluster bar charts** can be used for comparisons across additional categorical variables.
 
 
 ![](files/barchart.jpg){width=500px}
 
 
 
-### Chart Types: Cartesian Line Charts
+### Cartesian Line Charts
 
 - These graphs allow us to represent relationships between
 two variables with continuous measures.
-- The line graph below represents the frequency of the total population within the white and Black categories of a race variable on the Y-axis over year as a continous variable on the X-axis.
-- Line graphs can also use multiple lines for different categories of a variable (like race) to represent the relationship of a 2nd continuous variable (like average income) on the Y-axis between those categories *and* across variation in a third continous variable on the X-axis (like year).
-- Scatter plots use a similar framework, plotting a point for each observed unit according to its continous observed values for one variable on the Y-axis and another variable on the X-axis. Regression or fitted lines
+- The **Cartesian line graph* below represents the frequency of the total population within the white and Black categories of a race variable on the Y-axis over year as a continuous variable on the X-axis.
+- **Line graphs** can also use multiple lines for different categories of a variable (like race) to represent the relationship of a 2nd continuous variable (like average income) on the Y-axis between those categories *and* across variation in a third continuous variable on the X-axis (like year).
+- **Scatter plots** use a similar framework, plotting a point for each observed unit according to its continuous observed values for one variable on the Y-axis and another variable on the X-axis. Regression or fitted lines
 then represent the relationship between these two variables.
-- Time series line graphs, with
+- **Time series line graphs**, with
 time on the x-axis, are the
-most common type of cartesian line
+most common type of Cartesian line
 graph.
 
 ![](files/linechart.jpg){width=500px}
 
 
 
-### Chart Types: Statistical Maps
+### Statistical Maps
 
-- Statistical maps graph
-geo-spatial distributions of
-continuous interval-ratio
+- **Statistical maps** graph geo-spatial distributions of continuous interval-ratio
 variables (like the Black
 population of the U.S.) across categorical geographic units
 like states.
 - In our mapping activity, we review methods for choosing
 choropleth (color and shading) categories that represent
-different ranges of continous measures (like Black population size)
+different ranges of continuous measures (like Black population size)
 between geographic units.
 
 ![](files/statmap.jpg){width=500px}
@@ -181,8 +199,7 @@ an audio description of images.
 ### Challenge 1: Reading the Chart
 
 * What type of graph is this?
- * What variables are plotted on the chart?
- * Are the variables categorical, ordinal, or interval / ratio?
+* What variables are plotted on the chart? Are the variables categorical, ordinal, or interval / ratio?
  * What statistics are plotted?
  * Which category is highlighted?
 
@@ -196,8 +213,8 @@ How does Black illiteracy (the red bar) compare with other countries
 
 ### Answers
  * What variables are plotted: Country, Illiteracy rate
- * Variable types: Country is categorical. Illiteracy rate is continous, though it is derived from person-level categorical measures (literate or not literate)
- * Statistics plotted: Proportions (as percentages) of llitercy rate
+ * Variable types: Country is categorical. Illiteracy rate is continuous, though it is derived from person-level categorical measures (literate or not literate)
+ * Statistics plotted: Proportions (as percentages) of illiteracy rate
  * The Black illiteracy rate is highlighted.
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -206,7 +223,7 @@ How does Black illiteracy (the red bar) compare with other countries
 
 ::::::::::::::::::::::::::::::::::::: discussion
 
-### Disucssion
+### Discussion
 
 * How does Black illiteracy
 compare to literacy in other
@@ -273,10 +290,12 @@ to 1900. What data story do these 2 graphs tell together?
 
 # Example: Re-Create with Modern Data and Accessible Design
 
-![mod-data-chart](files/hand-drawn-bar20.jpg)
+Look at the Literacy Bar Chart. Hand draw a recreation of Du Bois’ graph using the data below on college attainment today. Building on the graph to the left, what accessible design improvements can you make?
 
 
-:::::::::::::::::::::::::::::::::::: discussion
+
+
+:::::::::::::::::::::::::::::::::::: challenge
 
 Activity: Hand draw a recreation of
 Du Bois’ graph using the data below
@@ -285,6 +304,11 @@ on college attainment today.
 Building on the graph to the left,
 what accessible design
 improvements can you make?
+
+
+![mod-data-chart](files/hand-drawn-bar20.jpg)
+
+
 
 Data: 
 
@@ -311,6 +335,10 @@ Italy		20
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Even simple chart types can convey interesting meaning. Color man be used to emphasize points
+- Use specific charts based on their data type.
+- Du Bois’ data charts show best practices for STEM chart accessibility and effectiveness. 
+- Interpret charts by identifying the variables and statistics.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
