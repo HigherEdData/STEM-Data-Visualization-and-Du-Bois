@@ -11,12 +11,10 @@ clicking execute. These activities are ideal for beginners who do not yet want t
 and learn to use a code editor and graphical user interface (GUI) on your own computer.
 The interactives use our [Jupyter Lite with Du Bois Notebooks](https://highereddata.github.io/dubois-jupyterlite/).
 
-If you already use a code editor and GUI like R Studio, Sublime, or Jupyter Lab, 
-we recommend that you instead use our language specific Lesson sites that use live
-coding exercises:
-
-- [STEM Data Visualization + Du Bois in R](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
-- STEM Data Visualization + Du Bois in Python (coming soon)
+If you teach students with who use R Studio, we recommend that you instead use our 
+[STEM Data Visualization + Du Bois in R](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
+lesson site with live coding exercises. We hope to soon create an equivalent
+lesson site with Python live coding exercises.
 
 Prior to the interactive coding activities, we present "Episodes" on:
 

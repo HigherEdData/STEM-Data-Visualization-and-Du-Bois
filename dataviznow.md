@@ -22,13 +22,15 @@ images.
 
 ::::::::::::
 
-### Learning from the Innovations of W.E.B. Du Bois
-
 <iframe width="560" height="315"
 src="https://drive.google.com/file/d/1U4nm-SvvVd3yRKLYxE4oMbpP8S4IDl8T/preview">
 </iframe>
 
-This content is also available in [Google Slides](https://docs.google.com/presentation/d/1AeePkTUoLgjxTNNlPH3IoIfZ4z3fH_1JNuowaa914jU/edit?usp=sharing) that can be copied and edited.
+### This video lecture content is also available in:
+
+- [Google Slides](https://docs.google.com/presentation/d/1AeePkTUoLgjxTNNlPH3IoIfZ4z3fH_1JNuowaa914jU/edit?usp=sharing) that can be copied and edited. 
+- A scrollable version below.
+
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
@@ -49,10 +51,9 @@ This content is also available in [Google Slides](https://docs.google.com/presen
 
 - Engage in a creative process of data visualization in the style of W.E.B. Du Bois, by applying techniques by hand and with statistical software.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Visualizations Help Formulate New Hypotheses
+## Visualizations Help Formulate New Hypotheses
 
 *If I can’t picture it, I can’t understand it.* – Albert Einstein
 
@@ -64,17 +65,17 @@ The first thing scientists want to do is understand an issue correctly. Visualiz
 
 
 
-# Why Communicate Through Visualizations?
+## Why Communicate Through Visualizations?
 
 Another thing scientists need to do is to communicate their findings effectively. Visualizing data is important to scientific communication because:
 
-Scientific discovery requires communicating our ideas and evidence to other scientists who can challenge or build on our findings.
+- Scientific discovery requires communicating our ideas and evidence to other scientists who can challenge or build on our findings.
 
-Charts, graphs, and other visuals can clarify associations between two or more things.  
+- Charts, graphs, and other visuals can clarify associations between two or more things.  
 
 For example, health researcher Florence Nightingale used data visualization early on to communicate scientific findings in ways that the public and policymakers could use to save lives.
 
-# Why the History of Data Visualization Matters Now
+## Why the History of Data Visualization Matters Now
 
 The social scientist W.E.B. Du Bois 
 provided one of the *earliest models* for effectively developing data visualizations, demonstrating how science matters for the most critical material and moral issues of the day
@@ -83,7 +84,7 @@ provided one of the *earliest models* for effectively developing data visualizat
 ![Du Bois, 1911](files/dubois-mono-small.png)
 
 
-# What Motivated DuBois?
+## What Motivated DuBois?
 
 Du Bois cared about the truth. He lived during a time when biological explanations were popular among scientist to explain racial inequality. 
 
@@ -94,7 +95,7 @@ Du Bois asked, instead, how discriminatory policies and the material consequence
 
 The figures show [Thomas Calloway](https://en.wikipedia.org/wiki/Thomas_J._Calloway), the organizer of the “Exhibition of the American Negro”, Du Bois during the [Paris Exposition in 1900](https://en.wikipedia.org/wiki/Exposition_Universelle_%281900%29), and [Atlanta University Students](https://umbrasearch.org/catalog/026e2cfa26b78a7312d66757e7606dc01c7236bd), circa 1900.
 
-# Data Visualization as a Scientific Concern for the Du Bois Lab
+## Data Visualization as a Scientific Concern for the Du Bois Lab
 
 * The Du Bois Lab found evidence to refute theories that falsely claimed inherent biological differences between races. 
 
@@ -102,7 +103,7 @@ The figures show [Thomas Calloway](https://en.wikipedia.org/wiki/Thomas_J._Callo
 
 * The Du Bois Lab communicated their evidence and arguments using data visualization that could be understood by wide audiences. 
 
-# Communicating Science to the Public: The 1900 Paris Exposition
+## Communicating Science to the Public: The 1900 Paris Exposition
 
 The 1900 World Fair in Paris provided a venue for Du Bois to challenge erroneous theories about racial difference and inequality. The exposition showcased the latest scientific discoveries and inventions to 50 million attendees from around the world.
 
@@ -112,24 +113,23 @@ The 1900 World Fair in Paris provided a venue for Du Bois to challenge erroneous
 
 The figures show the Exposition Poster, a view of Paris, and the venue for the Exposition of the American Negro.
 
+## Motivation: What could a scientist do?
 
-# Motivation: What could a scientist do?
+::::::::::::::::::::::::::::::::::::: discussion 
 
-:::::::::::::::::::::::::::::::::::::: questions 
+- What could Du Bois do as a scientist to challenge widely believed but false theories of racial inequality?
 
-What could Du Bois do as a scientist to challenge widely believed but false theories of racial inequality?
+- How could Du Bois best present his ideas and evidence at the Paris Exposition with the technologies available to him?
 
-How could Du Bois best present his ideas and evidence at the Paris Exposition with the technologies available to him?
+- What could you do today as a scientist to challenge theories about how a phenomenon operates that might be wrong?
 
-What could you do today as a scientist to challenge theories about how a phenomenon operates that might be wrong?
+- In your potential career, how might you visualize data? 
 
-In your potential career, how might you visualize data? 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Turning Data into Art
 
-![Illitercy](files/original-plate-14.jpg)
+## Turning Data into Art
 
 The Du Bois Lab creatively used charts to depict data about racial inequality.
 
@@ -137,17 +137,20 @@ This helped them show, for example, that when the US government ended bans on Bl
 
 The Lab even found that Black illiteracy had declined to lower levels than found in some parts of Europe where conditions of serfdom kept illiteracy high into the late 1800s.
 
-# Combining Different Art Forms
+![](files/original-plate-14.jpg){
+alt="Historical Du Bois visualization showing changes in literacy"}
+
+## Combining Different Art Forms
 
 The Du Bois Lab used a range of charts that combined different kinds of data with visual art, including maps, photographs, and drawings, to detail change over time.
 
-![Income and Expenditure of 150 Negro Families in Atlanta](files/original-plate-31.jpg)
+![](files/original-plate-31.jpg)
 
-# Picture This: Getting Creative With Data
+## Picture This: Getting Creative With Data
 
 ![](files/picture-this.png)
 
-# Praised and Preserved
+## Praised and Preserved
 
 What we remember and praise, we preserve. These charts have been praised for their ability to draw in viewers. The charts are also preserved in the [*Library of Congress*](https://www.loc.gov/collections/african-american-photographs-1900-paris-exposition/?c=200&sp=3&st=grid). Fisk University also houses an archive of Du Bois data visualizations.   
 
@@ -158,24 +161,13 @@ What we remember and praise, we preserve. These charts have been praised for the
 </div>
 </figure>
 
-# Recap (Overall Learning Objectives)
-
-
-1) The central place of data visualizations in the process of scientific discovery and in communicating those discoveries. The history of the DuBois Lab exemplifies this.
-
-
-2) It matters which type of chart or graph is used to depict a relationship, a cause, or a process. Some work better than others.
-
-3) Science requires creativity for discovery. Data visualizations help communicate relevant scientific findings to audiences effectively. 
-
-
-
 ::::::::::::::::::::::::::::::::::::: challenge
 
-### Exercise 1
 Why do you think Du Bois created a series of graphs and data visualizations of Black life for the exposition?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+Why visualizations instead of a written report?
+
+What effect did the venue have on the design of the visuals?
 
 ::::::::::::::::::::::::::::::::::::: hint
 
@@ -186,24 +178,29 @@ Why visualizations instead of a written report?
 ::::::::::::::::::::::::::::::::::::: solution
 
 ### Solution 1
-Du Bois used rigorous yet accessible methods to challenge subsequently discredited claims associated with scientific racism that devalued and assumed Black communities as inferior. The visualizations helped show some of the systemic barriers impeding the progress for black Americans as compared to a deficit approach that would suggest black people were somehow innately less capable. This is a paradigm shift in showing how social science can work together with other STEM fields to produce the most accurate science and impressive visualizations. 
+
+Du Bois cared about the truth. He lived during a time when biological explanations were popular among scientist to explain racial inequality. 
+
+Du Bois asked, instead, how discriminatory policies and the material consequences of slavery created unequal outcomes in wealth, literacy, and well being.  Du Bois and the Atlanta University Laboratory developed new questions for the US Census and conducted scientific surveys of the population. His Lab included investigators of different racial/ethnic backgrounds and it included women, which was not the norm at that time.
+
+Visualizations could speak to a broad audience, legible to people speaking different languages
+and with different levels of literacy.
+
+Reflecting the venue, the charts have bilingual titles in English and French.
+They are presented as posters to be browsed while walking through the exhibit.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Discussion
+::::::::::::::::::::::::::::::::::::: keypoints 
 
-What effect did the venue have on the design of the visuals?
+1) The central place of data visualizations in the process of scientific discovery and in communicating those discoveries. The history of the DuBois Lab exemplifies this.
 
 
-::::::::::::::::::::::::::::::::::::: discussion
+2) It matters which type of chart or graph is used to depict a relationship, a cause, or a process. Some work better than others.
 
-Why do you think Du Bois created a series of graphs and data visualizations of Black life for the exposition?
-
-Why visualizations instead of a written report?
-
-What effect did the venue have on the design of the visuals?
-
+3) Science requires creativity for discovery. Data visualizations help communicate relevant scientific findings to audiences effectively. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -226,6 +223,3 @@ What effect did the venue have on the design of the visuals?
 
 6. (The Lynching of Sam Hose)
 [https://en.wikipedia.org/wiki/Lynching_of_Sam_Hose]
-
-
-[r-markdown]: https://rmarkdown.rstudio.com/

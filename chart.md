@@ -1,5 +1,5 @@
 ---
-title: "Reading and Interpreting STEM Charts"
+title: "Reading STEM Charts"
 teaching: 10
 exercises: 10
 ---
@@ -18,11 +18,15 @@ Alternatively, you can copy and modify [Google Slides deck](https://docs.google.
 Subsequent episodes will have links to separate Google Slide Decks with their 
 images.
 
-
-
 ::::::::::::
 
-This content is also available in [Google Slides](https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/) that can be copied and edited.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z77Icn64w5c?si=KzlYNPA-kaA8-qjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### This video lecture content is also available in:
+
+* [Google Slides](https://docs.google.com/presentation/d/1D9f5neRZ0fPNMgI4RHjipco_vGyvu26wZqU-LI34RgQ/) that can be copied and edited. 
+
+* A scrollable version below.
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
@@ -41,11 +45,8 @@ This content is also available in [Google Slides](https://docs.google.com/presen
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Video overview
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z77Icn64w5c?si=KzlYNPA-kaA8-qjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Overview of Charts
+## Data and Chart Types
 
 - We use different types of graphs based on the types of data and relationships we are analyzing.
 - Du Bois used variants of commonly used graph types: (pie, bar, Cartesian line charts, and statistical maps).
@@ -189,6 +190,19 @@ an audio description of images.
 
 * Including narrative text with context and summaries
 
+## Context and Data Story
+
+Du Bois presented his graph for illiteracy among Black Americans and other
+nations (left), together with the graph of Black illiteracy in Georgia from 1865
+to 1900. What data story do these 2 graphs tell together?
+
+<figure>
+<div>
+<img src="files/barchart.jpg" width="40%"/>
+<img src="files/ill2.jpg" width="40%"/>
+</div>
+</figure>
+
 ## Literacy Bar Chart: a worked example
 
 ![](files/barchart.jpg){width=500px}
@@ -200,8 +214,11 @@ an audio description of images.
 
 * What type of graph is this?
 * What variables are plotted on the chart? Are the variables categorical, ordinal, or interval / ratio?
- * What statistics are plotted?
- * Which category is highlighted?
+* What statistics are plotted?
+* Which category is highlighted?
+* How does Black illiteracy
+compare to literacy in other
+countries on the chart?
 
 ::::::::::::::::::::::::::::::::::::: hint
 
@@ -216,30 +233,15 @@ How does Black illiteracy (the red bar) compare with other countries
  * Variable types: Country is categorical. Illiteracy rate is continuous, though it is derived from person-level categorical measures (literate or not literate)
  * Statistics plotted: Proportions (as percentages) of illiteracy rate
  * The Black illiteracy rate is highlighted.
+ * Black illiteracy is in the middle of the range for European countries -- higher than for some and lower than for others.
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::: discussion
+::::::::::::::::::::::::::::::::::::: challenge 
 
-### Discussion
-
-* How does Black illiteracy
-compare to literacy in other
-countries on the chart?
-
-* What is similar about the
-countries with higher illiteracy
-than Black illiteracy in the US?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-## Design Aesthetics and Accessibility
-
-:::::::::::::::::::::::::::::::::::::: questions 
+### Challenge 2: Assessing Design Aesthetics and Accessibility
 
 What makes the bar chart above  graph easy or
 difficult to understand?
@@ -254,10 +256,9 @@ audience into consideration?
 What tools would you need to create
 this graph by hand?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: solution
 
-
-::::::::::::::::::::::::::::::::::::: discussion
+### Answers
 
 This visual, a conventional bar graph,
 uses spot color to highlight the data
@@ -275,40 +276,22 @@ nod to the venue and audience).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Context and Data Story
-
-Du Bois presented his graph for illiteracy among Black Americans and other
-nations (left), together with the graph of Black illiteracy in Georgia from 1865
-to 1900. What data story do these 2 graphs tell together?
-
-<figure>
-<div>
-<img src="files/barchart.jpg" width="40%"/>
-<img src="files/ill2.jpg" width="40%"/>
-</div>
-</figure>
-
-# Example: Re-Create with Modern Data and Accessible Design
-
-Look at the Literacy Bar Chart. Hand draw a recreation of Du Bois’ graph using the data below on college attainment today. Building on the graph to the left, what accessible design improvements can you make?
-
-
+:::::::::::::::::::::::::::::::::::::
 
 
 :::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge 3: Re-Create with Modern Data and Accessible Design
 
 Activity: Hand draw a recreation of
 Du Bois’ graph using the data below
 on college attainment today.
 
-Building on the graph to the left,
-what accessible design
+Building what accessible design
 improvements can you make?
 
 
 ![mod-data-chart](files/hand-drawn-bar20.jpg)
-
-
 
 Data: 
 
@@ -328,8 +311,13 @@ Romania		20
 Italy		20
 ```
 
+::::::::::::::::::::::::::::::::::::: solution
+
+![](files/mod-data-chart.png){width=500px}
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
@@ -338,7 +326,6 @@ Italy		20
 - Use specific charts based on their data type.
 - Du Bois’ data charts show best practices for STEM chart accessibility and effectiveness. 
 - Interpret charts by identifying the variables and statistics.
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
