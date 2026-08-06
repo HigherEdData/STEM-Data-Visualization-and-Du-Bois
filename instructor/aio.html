@@ -399,7 +399,7 @@
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>We find that this lesson site is pedagogically effective when used as
 lecture notes and learning activity instructions. We do not recommend
@@ -617,7 +617,7 @@ visualizations of Black life for the exposition?</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Why visualizations instead of a written report?</p>
 </div>
@@ -629,7 +629,7 @@ visualizations of Black life for the exposition?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Solution 1 </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Du Bois cared about the truth. He lived during a time when biological
 explanations were popular among scientist to explain racial
@@ -1218,7 +1218,7 @@ Lite. No installation required)</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p><a href="https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_literacy_biodiversity_bar.ipynb" class="external-link uri">https://highereddata.github.io/dubois-jupyterlite/tree/?path=notebooks%2Fpy_literacy_biodiversity_bar.ipynb</a></p>
 <p><a href="https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_literacy_college_bar.ipynb" class="external-link uri">https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_literacy_college_bar.ipynb</a></p>
@@ -1767,13 +1767,27 @@ any links that you are not going to use.
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p>We will publish learning evaluation materials here including a SCORM
-file with a CANVAS quiz. The CANVAS quiz will contain links to answer
-keys for coding interactives that will be accessible only to
-instructors.</p>
-<p>We are also developing a system for providing answer keys to
-instructors for coding interactives and other learning evaluation
-activities that doesn’t use Canvas.</p></section><section id="aio-readings"><p>Content from <a href="readings.html">Readings</a></p>
+<p>Instructors can click here to
+<a href="https://github.com/HigherEdData/STEM-Data-Visualization-and-Du-Bois/raw/refs/heads/main/episodes/files/stem-+-du-bois-assignments-and-surveys-export.imscc" download class="external-link">download this IMS common cartridge file</a> that can be
+imported into Canvas or other learning management systems. The IMS
+common cartridge file includes “quiz” assignments that can be assigned
+as in class or at home assignments with questions for students to
+evaluate their understanding of the STEM + Du Bois module content.</p>
+<p>The instructor can select from different versions of the quizzes that
+correspond to the different R, Python, and Stata coding interactives
+available on this lesson module site.</p>
+<p>The quiz assignments include questions that ask students to upload an
+html file output of their completed Jupyter Notebook coding
+interactives. Instructions are included within with each coding
+interactive for how students can save an html copy of their completed
+notebook that displays their name on the graphs they recreate.</p>
+<p>The html file uploads can then be viewed in speed grader when
+reviewing quiz assignments submitted in Canvas. All questions in the
+quiz assignments also have an answer key that displays corresponding
+answers for instructors when they review students’ quiz question
+responses in Canvas.</p>
+<p>For any questions about the Canvas assignments, email Principal
+Investigator Charlie Eaton at <a href="mailto:ceaton2@ucmerced.edu" class="email">ceaton2@ucmerced.edu</a>.</p></section><section id="aio-readings"><p>Content from <a href="readings.html">Readings</a></p>
 <hr>
 <p>Last updated on 2026-08-06 |
 
