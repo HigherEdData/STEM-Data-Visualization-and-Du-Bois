@@ -9,9 +9,9 @@ web browser without any software installations on your own computer. This is ide
 for beginners with R who do not yet want to learn how to use the R studio interface 
 on their own computers.
 
-If you plan to use R in the future, however, we recommend that you instead try the 
-activities from our [R STEM Data Visualization with Du Bois](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
-lesson site. That site has activities with Du Boisian examples for learning to use R studio for data visualization on your own computer.
+If you plan to teach students who will use R Studio in the future, we recommend that you instead try the 
+activities from our [R STEM Data Visualization + Du Bois](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
+lesson site. That site has live coding activities organized for use with R Studio.
 
 ## Interactive 1: Literacy and College Attainment Bar Charts
 
