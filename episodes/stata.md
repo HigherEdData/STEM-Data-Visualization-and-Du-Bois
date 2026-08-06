@@ -4,8 +4,6 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
-## Graph Black Literacy After Emancipation with Stata
-
 We cannot offer a web-based interactive with Stata because it is a proprietary software.
 Instead, we provide a step-by-step guide for you to recreate and adapt Du Bois graphs
 in Stata on your own computer. We provide code that you can copy and paste into a
@@ -18,7 +16,9 @@ to use it interactively on your own computer. You find a step-by-step guide for 
 the StataNB kernel to run the notebook [**here**](https://github.com/charlieeatonphd/Graduate-Statistics-and-Data-Science-for-Sociology/blob/master/week1/w1lesson1_jupyter_setup.ipynb).
 
 Otherwise, scroll down for the step-by-step guide with Stata code for recreating 
-this Du Bois bar chart.
+a Du Bois bar chart.
+
+## Graph Black Literacy After Emancipation with Stata
 
 <div>
 

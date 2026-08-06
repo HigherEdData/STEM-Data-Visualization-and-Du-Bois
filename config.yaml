@@ -15,7 +15,7 @@
 carpentry: 'incubator'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'STEM Data Visualization + Du Bois'
 
 # Overall title for pages.
 title: 'STEM Data Visualization + Du Bois' # FIXME
@@ -88,5 +88,172 @@ profiles:
 #
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
+
+# The block below is injected verbatim at the end of every page
+# (sandpaper passes any non-"carpentries" `analytics` value straight
+# through to the {{& analytics}} slot in the varnish footer template).
+# We use it to customize the site chrome without forking {varnish}:
+#   - hide the Learner/Instructor view selector
+#   - hide the pre-alpha badge, the lesson progress bar, and the
+#     "Expand All Solutions" buttons
+#   - replace the top navigation links (Key Points / Glossary /
+#     Learner Profiles / More) with About, R Interactives,
+#     Python Interactives, and Stata Activities, and keep those links
+#     visible (wrapping onto extra rows) in narrow windows, where the
+#     stock theme hides them behind the Sections menu instead
+#   - rename the sidebar "EPISODES" heading to "SECTIONS"
+#   - swap the Carpentries Incubator logos for files/du-bois-title.png
+analytics: |
+  <style>
+    #instructor-dropdown,
+    .sidenav-view-selector { display: none !important; }
+    .large-logo .badge { display: none !important; }
+    .lesson-resources { display: none !important; }
+    .lesson-progress { display: none !important; }
+    #expand-code { display: none !important; }
+    .large-logo img,
+    .nav-logo img.small-logo { filter: none !important; }
+    .nav-logo img.small-logo { height: 32px; width: auto; }
+    .large-logo { display: flex; align-items: center; }
+    .large-logo .logo-lesson-title {
+      font-family: Mulish, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    .desktop-nav .lesson-title,
+    .lesson-title-md { display: none !important; }
+
+    /* The theme only shows the top navigation links at >=1200px and
+       otherwise folds them into the Sections menu. Keep them on the page
+       down to 768px instead, letting the row wrap when space runs out so
+       nothing overlaps the Search button. */
+    @media (min-width: 768px) {
+      .desktop-nav { display: block !important; }
+      .nav-container { flex-wrap: wrap; row-gap: 4px; }
+      .desktop-nav ul.navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 6px;
+        row-gap: 2px;
+        margin-bottom: 0 !important;
+      }
+    }
+
+    /* Below 768px the top row has no space for them, so they live in the
+       Sections menu panel instead. */
+    .site-nav-mobile { display: none; }
+    @media (max-width: 767.98px) {
+      .site-nav-mobile {
+        display: block;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--bs-border-color, #ddd);
+      }
+      .site-nav-mobile a {
+        display: block;
+        padding: 6px 0;
+        font-weight: 600;
+      }
+    }
+  </style>
+  <script>
+    (function () {
+      var root = "";
+      var probe = document.querySelector(
+        'a.nav-link[href$="key-points.html"], a.nav-link[href$="profiles.html"]'
+      );
+      if (probe) {
+        root = probe
+          .getAttribute("href")
+          .replace(/(instructor\/)?(key-points|profiles)\.html$/, "");
+      } else if (window.location.pathname.indexOf("/instructor/") !== -1) {
+        root = "../";
+      }
+
+      var links = [
+        ["About", "index.html"],
+        ["R Interactives", "R.html"],
+        ["Python Interactives", "Python.html"],
+        ["Stata Activities", "stata.html"]
+      ];
+
+      var titleEl = document.querySelector(".desktop-nav .lesson-title");
+      var siteTitle = titleEl
+        ? titleEl.textContent.trim()
+        : "STEM Data Visualization + Du Bois";
+
+      var logo = root + "files/du-bois-title.png";
+      var logos = document.querySelectorAll(
+        ".large-logo img, .nav-logo img.small-logo"
+      );
+      Array.prototype.forEach.call(logos, function (img) {
+        img.src = logo;
+        img.alt = "STEM Data Visualization + Du Bois";
+      });
+
+      var largeLogo = document.querySelector(".large-logo");
+      if (largeLogo && !largeLogo.querySelector(".logo-lesson-title")) {
+        var titleSpan = document.createElement("span");
+        titleSpan.className = "logo-lesson-title";
+        titleSpan.textContent = siteTitle;
+        largeLogo.appendChild(titleSpan);
+      }
+
+      var expanders = document.querySelectorAll("#expand-code");
+      Array.prototype.forEach.call(expanders, function (btn) {
+        var wrapper = btn.parentNode;
+        btn.parentNode.removeChild(btn);
+        if (wrapper && !wrapper.textContent.trim() && !wrapper.children.length) {
+          wrapper.parentNode.removeChild(wrapper);
+        }
+      });
+
+      var nav = document.querySelector(".desktop-nav ul.navbar-nav");
+      if (nav) {
+        while (nav.firstChild) {
+          nav.removeChild(nav.firstChild);
+        }
+        links.forEach(function (item) {
+          var li = document.createElement("li");
+          li.className = "nav-item";
+          var a = document.createElement("a");
+          a.className = "nav-link";
+          a.href = root + item[1];
+          a.textContent = item[0];
+          li.appendChild(a);
+          nav.appendChild(li);
+        });
+      }
+
+      var chaptersHeading = document.querySelector("#chapters .chapters");
+      if (chaptersHeading) {
+        chaptersHeading.textContent = "SECTIONS";
+      }
+      var collapseToggle = document.querySelector(".collapse-toggle");
+      if (collapseToggle) {
+        collapseToggle.setAttribute("data-episodes", "Sections ");
+      }
+
+      var sidebarInner = document.querySelector(".sidebar-inner");
+      if (sidebarInner && !sidebarInner.querySelector(".site-nav-mobile")) {
+        var mobileNav = document.createElement("div");
+        mobileNav.className = "site-nav-mobile";
+        links.forEach(function (item) {
+          var a = document.createElement("a");
+          a.href = root + item[1];
+          a.textContent = item[0];
+          mobileNav.appendChild(a);
+        });
+        var episodeAccordion = sidebarInner.querySelector("#accordionFlush11");
+        sidebarInner.insertBefore(
+          mobileNav,
+          episodeAccordion || sidebarInner.firstChild
+        );
+      }
+    })();
+  </script>
 
 

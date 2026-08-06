@@ -9,11 +9,6 @@ web browser without any software installations on your own computer. This is ide
 for beginners with Python who do not yet want to learn how to use a Python editor and 
 graphical user interface (GUI) like Jupyter Lab or Sublime on their own computer.
 
-If you plan to use Python in the future, however, we recommend that you instead try 
-the activities from our [Python STEM Data Visualization with Du Bois]() lesson site.
-That site has activities with Du Boisian examples for learning to use Jupyter Lab for
-data visualization on your own computer.
-
 ## Interactive 1: Bar Charts of Literacy and College Attainment
 
 Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fpy_literacy_college_bar.ipynb)

@@ -4,7 +4,7 @@ title: Setup
 
 ## Setup
 
-Modules include coding interactives in R and Python that you open and use with any 
+Our module includes coding interactives in R and Python that you can open and use with any 
 web browser without any software installations on your own computer. These activities
 provide code blocks, often with prompts for users to fill in the blank or edit code before 
 clicking execute. These activities are ideal for beginners who do not yet want to install 
@@ -13,10 +13,10 @@ The interactives use our [Jupyter Lite with Du Bois Notebooks](https://higheredd
 
 If you teach students with who use R Studio, we recommend that you instead use our 
 [STEM Data Visualization + Du Bois in R](https://carpentries-incubator.github.io/R-Data-Viz-with-Du-Bois)
-lesson site with live coding exercises. We hope to soon create an equivalent
-lesson site with Python live coding exercises.
+lesson site with live coding exercises. We hope to eventually create an equivalent
+lesson site with Python live coding exercises for local GUIs.
 
-Prior to the interactive coding activities, we present "Episodes" on:
+Prior to the interactive coding activities, this lesson module features sections on:
 
 1. **Data Visualization Now:** This covers how visualization can be a tool for scientific
 discovery in STEM research. The lesson examines how Du Bois turned to visualization
