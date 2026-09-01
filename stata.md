@@ -1,12 +1,12 @@
 ---
-title: "Stata activities"
+title: "Stata Activities"
 teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
 We cannot offer a web-based interactive with Stata because it is a proprietary software.
 Instead, we provide a step-by-step guide for you to recreate and adapt Du Bois graphs
-in Stata on your own computer. We provide code that you can copy and paste into a
+in Stata on your own computer. We provide code you can copy and paste into a
 Stata .do file. We help you learn by asking you to fill in blanks or otherwise edit
 the code before executing it from the .do file.
 
@@ -28,13 +28,18 @@ a Du Bois bar chart.
 
 ### This exercise is inspired by the annual #DuBoisChallenge
 
-The #DuBoisChallenge is a call to scientists, students, and community members to recreate, adapt, and share on social media the data visualzations created by W.E.B. Du Bois and his collaborators in 1900. Before doing the interactive exercise, please read this article about the Du Bois Challenge: <https://nightingaledvs.com/the-dubois-challenge/>. You can find the latest Du Bois visualizations by searching for the #DuBoisChallenge2025 hash tag on social media (Twitter, Bluesky, Insta etc). And you can even use the hashtag to share your own recreations.
+The #DuBoisChallenge is a call to scientists, students, and community members to recreate, 
+adapt, and share on social media the data visualzations created by W.E.B. Du Bois and his 
+collaborators in 1900. Before doing the interactive exercise, please read this article about 
+the Du Bois Challenge: <https://nightingaledvs.com/the-dubois-challenge/>. You can find the latest 
+Du Bois visualizations by searching for the #DuBoisChallenge2025 hash tag on social media 
+(Twitter, Bluesky, Insta etc). You can use the hashtag to share your own recreations.
 
 ### In this interactive excercise, you will:
 
-1.  Learn how to create a variation of a **bar graph.**
-2.  Learn and modify code in the statistical programming lanugage **Stata**.
-3.  Learn how to write statistical code to:
+1.  Create a variation of a **bar graph.**
+2.  Modify code in the statistical programming lanugage **Stata**.
+3.  Write statistical code to:
     -   create visualizations that consistently and accurately represent your data
     -   create a transparent record of exactly how you visualized something
     -   make it easy for you or others to recreate or modify your visualization
@@ -42,11 +47,36 @@ The #DuBoisChallenge is a call to scientists, students, and community members to
 
 ### You will learn how to use the *Stata* statistical programming language by creating two graphs:
 
-1.  You will recreate Du Bois' visualization of Black **illiteracy rates** in the US compared to illiteracy rates in other countries. Du Bois created the visualization in 1900.
+1.  Recreate Du Bois' visualization of Black **illiteracy rates** in the US compared to illiteracy rates in other countries. Du Bois created the visualization in 1900.
 
-2.  You will reproduce Du Bois' visualization using data on Black **college attainment** in the US today. This aligns with how Du Bois saw mass education as one important strategy for furthering and deepining emancipation for Black Americans and others.
+2.  Reproduce Du Bois' visualization using data on Black **college attainment** in the US today. This aligns with how Du Bois saw mass education as one important strategy for furthering and deepining emancipation for Black Americans and others.
 
-3.  An important context of Du Bois's graph of Black illiteracy is that literacy was illegal for enslaved people in the U.S. until emancipation and the Confederacy's defeat during the Civil War. Illiteracy then declined rapidly as Black Americans sought to empower themselves through education. The Du Bois plotted this decline in illiteracy among Black residents in the state of Georgia in the figure below. They used decennial US census illiteracy rates for Georgia from 1860 to 1890 that are available [**here**](https://babel.hathitrust.org/cgi/pt?id=njp.32101025729177&seq=49). They likely wrote "50%?" for the 1900 illiteracy rate because the Census did not publish 1900 illiteracy rates (available [**here**](https://www2.census.gov/library/publications/decennial/1900/bulletins/demographic/8-negroes-in-us-part-1.pdf)) until several months after the Paris Exposition.
+### Context for Du Bois's Work
+
+An important context of Du Bois's graph of Black illiteracy is that literacy was
+illegal for enslaved people in the U.S. until emancipation and the Confederacy's
+defeat during the Civil War. Illiteracy then declined rapidly as Black Americans
+sought to empower themselves through education. The Du Bois plotted this decline
+in illiteracy among Black residents in the state of Georgia in the figure below.
+They used decennial US census illiteracy rates for Georgia from 1860 to 1890 that
+are available [**here**](https://babel.hathitrust.org/cgi/pt?id=njp.32101025729177&seq=49).
+They likely wrote "50%?" for the 1900 illiteracy rate because the Census did not publish 1900
+illiteracy rates (available [**here**](https://www2.census.gov/library/publications/decennial/1900/bulletins/demographic/8-negroes-in-us-part-1.pdf))
+until several months after the Paris Exposition.
+
+There is no record of the exact data used by the Du Bois team for this bar graph.
+The Du Bois graph curiously does not include tick marks with a labeled axis scale
+to show what exact values each bar represents. Why? Perhaps the Du Bois team wanted
+to emphasize that the bar graph was a rough comparison of illiteracy rates because
+of varied timing, methods, and national boundaries for measuring illiteracy rates
+at the time. The length of the "Negroes U.S.A" bar likely represents the national
+Black illiteracy rate of 57.1% reported by the 1890 US Census (see reported "Russie"
+(Russia) bar correspond to the national US Black illiteracy rate in the 1890 US Census
+(see [**here**](https://www2.census.gov/library/publications/decennial/1900/bulletins/demographic/8-negroes-in-us-part-1.pdf)).
+So our data derives illiteracy rates for other countries based on the length of
+each country's bar relative to "Negroes U.S.A." bar, presuming the "Negroes U.S.A."
+bar represents 57.1%.
+
 
 <div>
 
@@ -79,13 +109,16 @@ display 2+2 // the result of 2 +2 should be 4
 
 ## 3. Importing Du Bois' data into Stata
 
-The first step for data visualization in **Stata** is to **import** your data. This is like double clicking a file to open it in other computer programs. But with **Stata**, we use code.
+The first step for data visualization in **Stata** is to **import** your data.
+This is like double clicking a file to open it in other computer programs. But with **Stata**, we use code.
 
-There is no record of the exact data used by the Du Bois team for this bar graph. And the Du Bois graph curiously does not include tick marks with a labeled axis scale to show what exact values each bar represents. Why? Perhaps the Du Bois team wanted to emphasize that the bar graph was a rough comparison of illiteracy rates because of varied timing, methods, and national boundaries for measuring illiteracy rates at the time. The length of the "Negroes U.S.A" bar likely represents the national Black illiteracy rate of 57.1% reported by the 1890 US Census (see reported "Russie" (Russia) bar correspond to the national US Black illiteracy rate in the 1890 US Census (see [**here**](https://www2.census.gov/library/publications/decennial/1900/bulletins/demographic/8-negroes-in-us-part-1.pdf)). So our data derives illiteracy rates for other countries based on the length of each country's bar relative to "Negroes U.S.A." bar, presuming the "Negroes U.S.A." bar represents 57.1%.
+We are also going to import a special Du Bois **Stata scheme** that adds graph
+settings that automates setting background colors and other graph choices to look
+like Du Bois' graph.
 
-We are also going to import a special Du Bois **Stata scheme** that adds graph settings that automates setting background colors and other graph choices to look like Du Bois' graph.
-
-For this exercise, we're going to import the scheme from a \***SSC** (social science computing) website. Then we'll import the Du Bois data from a website. In this case, the data is in a .csv (comma separated value) file.
+For this exercise, we're going to import the scheme from a \***SSC**
+(social science computing) website. Then we'll import the Du Bois data from a website.
+In this case, the data is in a .csv (comma separated value) file.
 
 The **Stata** code to import the Du Bois scheme from SSC is `ssc install dubois`.
 
@@ -113,12 +146,12 @@ After successfully listing the data above, you should be able to see that it has
 
 As a first step, we will create a **bar graph** of the data using the shortest code possible. The code will:
 
-1.  repeat the code below that we wrote above to **import** the Du Bois illiteracy data.
+1.  Repeat the code below that we wrote above to **import** the Du Bois illiteracy data.
 
 2.  Add a `graph hbar` command. `hbar` is short for ***horizontol bar***. After hbar we:
 
--   include (`asis`) in parentheses to tell Stata we want to graph each data point as it is listed in the dataset, rather than first computing its mean or some statistic from multiple data points per country.
--   list the bar value variable that determines the length of each bar.
+-   include (`asis`) in parentheses to tell Stata we want to graph each data point as it is listed in the dataset, rather than first computing its mean or some statistic from multiple data points per country.<br>
+-   list the bar value variable that determines the length of each bar.<br>
 -   following a comma, specify the category variable for the categories of each bar. We do this by writing the category variable name in parentheses after the specification like this: `over(categoryvariablename)`
 
 After looking at Du Bois' version of the graph above, replace the `_____` characters in the code cell below to plot the correct variable as the bar value variable and the correct variable as the category variable. Then run the code in your Stata Notebook
