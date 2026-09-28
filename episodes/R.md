@@ -55,7 +55,7 @@ src="https://drive.google.com/file/d/1o0IPPYZ9juC5FDlZbrJyh6AdpC4pPLdC/preview">
 
 ## Interactive 3: Population and CO2 Line Charts
 
-Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_r_population_co2_line.ipynb).
+Try it using [Jupyter Lite](https://highereddata.github.io/dubois-jupyterlite/notebooks/index.html?path=notebooks%2Fr_population_co2_line.ipynb).
 (Recommended. No installation required.)
 
 This video tutorial will walk you through the interactive.
