@@ -4,19 +4,19 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
-We cannot offer a web-based interactive with Stata because it is a proprietary software.
-Instead, we provide a step-by-step guide for you to recreate and adapt Du Bois graphs
-in Stata on your own computer. We provide code you can copy and paste into a
-Stata .do file. We help you learn by asking you to fill in blanks or otherwise edit
-the code before executing it from the .do file.
+Due to Stata's proprietary software preventing web based interactives, we provide
+a step-by-step guide to recreate and adapt Du Bois graphs
+in Stata on your own computer. The code provided can be copy and pasted into a
+Stata .do file for your own use.
+The excerpts included throughout the module contains blanks or sections you can
+otherwise edit after pasting the sections into your .do file.
 
 If you have access to both Jupyter and a Stata license, you could also download this
 [Jupyter Notebook](https://github.com/HigherEdData/Du-Bois-STEM/blob/main/notebooks/stata_literacy_dubois.ipynb) 
-to use it interactively on your own computer. You find a step-by-step guide for installing
-the StataNB kernel to run the notebook [**here**](https://github.com/charlieeatonphd/Graduate-Statistics-and-Data-Science-for-Sociology/blob/master/week1/w1lesson1_jupyter_setup.ipynb).
+to use it interactively on your own computer.
 
-Otherwise, scroll down for the step-by-step guide with Stata code for recreating 
-a Du Bois bar chart.
+A step-by-step guide for installing the StataNB kernel to run the notebook
+can be found [**here**](https://github.com/charlieeatonphd/Graduate-Statistics-and-Data-Science-for-Sociology/blob/master/week1/w1lesson1_jupyter_setup.ipynb).
 
 ## Graph Black Literacy After Emancipation with Stata
 
@@ -33,32 +33,40 @@ adapt, and share on social media the data visualzations created by W.E.B. Du Boi
 collaborators in 1900. Before doing the interactive exercise, please read this article about 
 the Du Bois Challenge: <https://nightingaledvs.com/the-dubois-challenge/>. You can find the latest 
 Du Bois visualizations by searching for the #DuBoisChallenge2025 hash tag on social media 
-(Twitter, Bluesky, Insta etc). You can use the hashtag to share your own recreations.
+(X, Bluesky, Insta etc). You can use the hashtag to share your own recreations.
 
 ### In this interactive excercise, you will:
 
-1.  Create a variation of a **bar graph.**
-2.  Modify code in the statistical programming lanugage **Stata**.
-3.  Write statistical code to:
+1.  Create a **bar graph.**
+
+2.  Modify **Stata** code.
+
+3.  Write code to:
     -   create visualizations that consistently and accurately represent your data
-    -   create a transparent record of exactly how you visualized something
-    -   make it easy for you or others to recreate or modify your visualization
-4.  Create a Stata .do file and pdf exports of your graphs that you can submit for any class assignments.
+    -   create a transparent record of how you created visualizations
+    -   improve ease of duplication to recreate or modify your visualization
 
-### You will learn how to use the *Stata* statistical programming language by creating two graphs:
+4.  Create a Stata .do file and pdf exports of your graphs to submit for class assignments
 
-1.  Recreate Du Bois' visualization of Black **illiteracy rates** in the US compared to illiteracy rates in other countries. Du Bois created the visualization in 1900.
+### You will learn how to use *Stata* to create two related graphs:
 
-2.  Reproduce Du Bois' visualization using data on Black **college attainment** in the US today. This aligns with how Du Bois saw mass education as one important strategy for furthering and deepining emancipation for Black Americans and others.
+1.  Recreate Du Bois' visualization of Black **illiteracy rates** in the US compared to illiteracy rates in other countries.
+
+2.  Reproduce Du Bois' visualization using data on Black **college attainment** in the US today.
+
 
 ### Context for Du Bois's Work
 
 An important context of Du Bois's graph of Black illiteracy is that literacy was
 illegal for enslaved people in the U.S. until emancipation and the Confederacy's
 defeat during the Civil War. Illiteracy then declined rapidly as Black Americans
-sought to empower themselves through education. The Du Bois plotted this decline
-in illiteracy among Black residents in the state of Georgia in the figure below.
-They used decennial US census illiteracy rates for Georgia from 1860 to 1890 that
+sought to empower themselves through education. The graphs developed in this exercise
+aligns with how Du Bois saw mass education as one important strategy for
+furthering and deepening emancipation for Black Americans and others.
+
+
+Du Bois plotted declining illiteracy among Black residents in the state of
+Georgia in the figure below. They used decennial US census illiteracy rates for Georgia from 1860 to 1890 that
 are available [**here**](https://babel.hathitrust.org/cgi/pt?id=njp.32101025729177&seq=49).
 They likely wrote "50%?" for the 1900 illiteracy rate because the Census did not publish 1900
 illiteracy rates (available [**here**](https://www2.census.gov/library/publications/decennial/1900/bulletins/demographic/8-negroes-in-us-part-1.pdf))
@@ -84,21 +92,24 @@ bar represents 57.1%.
 
 </div>
 
-## 1. Syntax for Stata code
+## 1. Syntax, Layering, and LLM Review of Stata code
 
-When we use code, we often separate different parts of the code's instructions to the computer using parentheses, commas, and quotation marks. This is called syntax.
+When coding, we separate different parts of the code's instructions using parentheses, commas, and quotation marks. This is called **syntax**.
 
-When we have multiple lines of code that need to work together in stata, we place three backslashes `///` at the end of each line to tell Stata the code continues on the next line.
+When we have multiple lines of code that need to work together in Stata, we place three backslashes `///` at the end of each line to tell Stata the code continues on the next line.
 
-Every open parenthese and quotation mark needs to be closed. And all of these pieces need to be just right. When it's not, the code won't work and that can be frustrating.
+Every open parentheses and quotation mark needs to be closed. And all of these pieces need to be just right, because when it's not the code won't work, causing errors.
 
-We'll try to give clear instructions so you can get the code right yourself. But chatGPT is a powerful tool for fixing little syntax problems. At any time, you can copy and paster your code into chatGPT and ask, **why is this code not working?**. Or, **how can I fix this code so it runs?** chatGPT is good for this kind of code debugging.
+It is also helpful to think of sections of codes as layers that are put together to create figures. Each section of code introduces either a new layer or a modification to an existing layer. Across this interactive exercise, take note of how we label sections of code as layers to help understand what each section of code builds.
+
+We'll try to give clear instructions so you can get the code right yourself. But LLM's are increasingly powerful tools for fixing little syntax problems. At any time, you can copy and paste your code into an LLM and ask, **why is this code not working?**. Or, **how can I fix this code so it runs?**
 
 ## 2. Reading and writing comments that explain your code
 
-In a Stata .do file you can write **comment** text that explains our code. We put a `//` before **comment** text to tell Stata that the text is not code it should execute. Any text after a `//` on a given line will be treated as a comment. To see how this works, try the following below:
+In a Stata .do file you can write **comment** text that explains our code. We put a `//` before **comment** text to tell Stata that the text is not code it should execute. Any text after a `//` on a line will be treated as a comment. To see how this works, try the following below:
 
 1.  Try to run the code below. You should get an error message because the comment text `This is code that adds 2+2` is not Stata code and doesn't have a `//` sign in front of it.
+
 2.  Add a `//` sign before `This is code that adds 2+2` and try to run the code again in your .do file.
 
 ``` stata
@@ -116,6 +127,8 @@ We are also going to import a special Du Bois **Stata scheme** that adds graph
 settings that automates setting background colors and other graph choices to look
 like Du Bois' graph.
 
+Each of these steps can be understood as layers of code brought in to accomplish specific tasks.
+
 For this exercise, we're going to import the scheme from a \***SSC**
 (social science computing) website. Then we'll import the Du Bois data from a website.
 In this case, the data is in a .csv (comma separated value) file.
@@ -124,13 +137,13 @@ The **Stata** code to import the Du Bois scheme from SSC is `ssc install dubois`
 
 The **Stata** code to import the data file is `import delimited "web_address_with_data/data_file_name.csv", clear`
 
-The `delimited` word in the code tells stata that the file is comma separated. At the end of the web location and file name, there is a comma. After that comma we can add "specifications" to the command. Here, the only extra specification is `clear` which tells Stata to clear any data it has already loaded and replace it with the data from the import command.
+The `delimited` word in the code tells Stata that the file is comma separated. At the end of the web location and file name, there is a comma. After that comma we can add "specifications" to the command. Here, the only extra specification is `clear` which tells Stata to clear any data it has already loaded and replace it with the data from the import command.
 
-To do this yourself, replace the `____` portion of the code below to add the `import` command.
+To do this yourself, replace the `____` portion of the code below with the `import` command.
 
-Then, to confirm the data has imported, write the `list` command to list all the data loaded in stata.
+Then, to confirm the data has imported, write the `list` command to list all the data loaded in Stata.
 
-Then run these three lines of code in you .do file.
+Once completed, run these three lines of code in you .do file.
 
 ``` stata
 ssc install dubois
@@ -142,16 +155,20 @@ list
 
 ## 4. Creating a Bar Graph
 
-After successfully listing the data above, you should be able to see that it has data in two columns. Each column is a **variable**: \* **country** is a country name for 10 countries with Black people in the U.S. treated as a country. \* **illiteracy** containts percent of people in each country who are illiterate.
+After successfully listing the data above, you should see data presented in two columns. Each column is a **variable**: \* **country** is a country name for 10 countries with Black people in the U.S. treated as a country. \* **illiteracy** is the percent of people in each country who are illiterate.
 
-As a first step, we will create a **bar graph** of the data using the shortest code possible. The code will:
+As a first step, we will create a **bar graph** of the data using the shortest code possible.
+
+The code will add two layers that do the following:
 
 1.  Repeat the code below that we wrote above to **import** the Du Bois illiteracy data.
 
-2.  Add a `graph hbar` command. `hbar` is short for ***horizontol bar***. After hbar we:
+2.  Add a `graph hbar` command, with `hbar` being short for ***horizontol bar***. After hbar we:
 
 -   include (`asis`) in parentheses to tell Stata we want to graph each data point as it is listed in the dataset, rather than first computing its mean or some statistic from multiple data points per country.<br>
+
 -   list the bar value variable that determines the length of each bar.<br>
+
 -   following a comma, specify the category variable for the categories of each bar. We do this by writing the category variable name in parentheses after the specification like this: `over(categoryvariablename)`
 
 After looking at Du Bois' version of the graph above, replace the `_____` characters in the code cell below to plot the correct variable as the bar value variable and the correct variable as the category variable. Then run the code in your Stata Notebook
@@ -185,7 +202,7 @@ graph hbar (asis) illiteracy, ///
 
 In the bar graph you created above, can you tell what order the bars for each country are sorted by?
 
-Du Bois sorts the bar for each country by its illiteracy rate from highest to lowest. To do this in stata, we need to generate an negative illiteracy variable to sort bars in descending order (the most negative illiteracy rate is the smallest value, which will then sort from lowest to highest). This is done by the `gen illiteracy_neg = -illiteracy` code below.
+Du Bois sorts the bar for each country by its illiteracy rate from highest to lowest. To do this in Stata, we need to generate a negative illiteracy variable to sort bars in descending order (the most negative illiteracy rate is the smallest value, which will then sort from lowest to highest). This is done by the `gen illiteracy_neg = -illiteracy` code below.
 
 To graph the Black U.S. bar in a different color, we also need to create separate illiteracy variables for Blacks in the U.S. and for all other countries. This is done by the `separate illiteracy,  by(country=="Negroes, U.S.A.")` code below.
 
@@ -211,11 +228,11 @@ graph hbar (asis) illiteracy0 illiteracy_, ///
 
 ## 7. Turn the legend off grid lines off. Make the Country label text smaller.
 
-The country label text is now a bit large. So we add the following label text size code `label(labsize(1.5))` to make it smaller. This code has to go within the `over()` specficiations parantheses. Its tricky, so we've done it for you.
+The country label text is now a bit large. To reduce its size we add the following label text size code `label(labsize(1.5))`. This code has to go within the `over()` specifications parantheses. Its tricky, so we've done it for you.
 
-Using separate bars for Black U.S. illiteracy and for other countries added a legend that Du Bois did not use and that is not necessary. To remove this legend, we simply add a line `legend(off)` line of code.
+Using separate bars for Black U.S. illiteracy and for other countries added a legend that Du Bois did not use and is not necessary. To remove this legend, we add `legend(off)` as a line of code.
 
-Du Bois also did not use grid lines or axis labels to show bar lenght. To implement this, we add a line of code `ylabel("", nogrid)` Where the empty quotation marks tell Stata there should be no Y axis labels (even though the graph is horizontal, Stata still considers the bar length axis the Y axis).
+Du Bois also did not use grid lines or axis labels to show bar length. To implement this, we add `ylabel("", nogrid)` Where the empty quotation marks tell Stata there should be no Y axis labels (even though the graph is horizontal, Stata still considers the bar length axis the Y axis).
 
 Fill in the blanks below with `off` and `nogrid` to complete these lines of code. Then run them in your .do file.
 
@@ -277,11 +294,9 @@ Now that you've written code to graph Du Bois' literacy data, you can use that s
 
 To see how this works, fill in the blank below to import our **d_college_country.csv** dataset instead of the literacy dataset.
 
-List will then display all of the country names and college attainment rates the data.
+`List` will then display all of the country names and college attainment rates the data.
 
-We obtained this data for the same countries that Du Bois graphed literacy in 1900.
-
-We obtained the country level data from the most recent data reported by the OECD here: <https://www.oecd.org/en/topics/sub-issues/education-attainment.html>
+We obtained this data for the same countries that Du Bois graphed literacy in 1900 through data reported by the OECD that you can find here: <https://www.oecd.org/en/topics/sub-issues/education-attainment.html>
 
 We obtained the Black college attainment rate data for the U.S. from: <https://www.luminafoundation.org/stronger-nation/report/#/progress/racial_equity>
 
@@ -300,7 +315,9 @@ After reading in the **d_college_country.csv** data, you can edit the graph code
 Fill in the blanks below to:
 
 1.  Change the bar variables you are graphing from literacy to the **college** variables.
-2.  Change the subtitle of the graph to be a translation of the title to the language of your choice. Du Bois translated his graph title to French for his 1900 Paris Exposition audience in France.
+
+2.  Change the subtitle of the graph to be a translation of the title to the language of your choice.
+
 3.  Add your own name for the **Adapted by** line.
 
 ``` stata
@@ -332,13 +349,13 @@ graph hbar (asis) __________0 __________1, ///
 
 Some of Du Bois' graphing choices might not make sense for graphs you want to make.
 
-For example, Du Bois doesn't provide labels or grid lines to make it easy to understand what the range of college attainment rates are for the countries. **Delete the line of code below that removed the grid lines to restore them**
+For example, Du Bois doesn't provide labels or grid lines making it difficult to understand what the range of college attainment rates are for the countries. **Delete the line of code below that removed the grid lines to restore them**
 
 In addition, red and green bars are difficult to differentiate for those with colorblindness. **Edit the line of code that set the bar colors to green and red to change the colors to orange and blue which are colorblind accessible.**
 
 Then run the code with the graph export command below to create a jpeg that you can submit for an assignment.
 
-If you want to customize the chart further to add your own style twist, try a google search or chatGPT query. For a chatGPT query, you could copy and paste the code from below and ask, **how could I change this R ggplot code to change the font color to pink**
+If you want to customize the chart further to add your own style twist, try a google search or LLM query. For a LLM query, you could copy and paste the code from below and ask, **how could I change this R ggplot code to change the font color to pink**
 
 ``` stata
 ssc install dubois
