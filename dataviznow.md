@@ -206,20 +206,28 @@ They are presented as posters to be browsed while walking through the exhibit.
 
 # References
 
-1. (Paris Exposition of 1900 (Exposition Universelle))
-[https://en.wikipedia.org/wiki/Exposition_Universelle_(1900)]
+1. L’Exposition de Paris ( (1900). Montgredien et Cie. Internet Archive. 
+[https://archive.org/details/expositiondepar1/page/n335/mode/2up]
 
-2. (Black America, 1895)
+United States. (1901). Report of the Commissioner-General for the United States to the International universal exposition, Paris, 1900. February 28, 1901, read, referred to the Committee on Printing, and ordered to be printed (Vol. 2). HathiTrust Digital Library. [https://babel.hathitrust.org/cgi/pt?id=gri.ark:/13960/t8nd2kw7v&seq=545]
+
+2. Berry, D. (2021, February 24). Black America, 1895.
 [https://publicdomainreview.org/essay/black-america-1895]
 
-3. (Plessy v. Ferguson)
+3. National Archives. (2022, May 10). Plessy v. Ferguson (1896). National Archives and Records Administration. 
 [https://www.britannica.com/event/Plessy-v-Ferguson-1896]
 
-4. (The Philadelphia Negro)
-[https://www.google.com/books/edition/_/sqwJAAAAIAAJ]
+4. Du Bois, W. E. B. (1899). The Philadelphia Negro: A social study. University of Pennsylvania Press.
+[https://lccn.loc.gov/05033530]
 
-5. (Wilmington Insurrection of 1898)
-[https://en.wikipedia.org/wiki/Wilmington_insurrection_of_1898]
+Alridge, D. P. (2020, July 21). W. E. B. Du Bois in Georgia. New Georgia Encyclopedia.
+[https://www.georgiaencyclopedia.org/articles/history-archaeology/w-e-b-du-bois-in-georgia/]
 
-6. (The Lynching of Sam Hose)
-[https://en.wikipedia.org/wiki/Lynching_of_Sam_Hose]
+5. PBS. (2024, November 12). American coup: Wilmington 1898. American Experience. 
+[https://www.pbs.org/wgbh/americanexperience/films/american-coup-wilmington-1898/]
+
+Collins, L. (2026). They stole a city: Wilmington's white supremacist coup and the families who live with its legacy. Penguin Random House. 
+[https://www.penguinrandomhouse.com/books/610949/they-stole-a-city-by-lauren-collins/] 
+
+6. Arnold, E. T. (2009). What virtue there is in fire: Cultural memory and the lynching of Sam Hose. University Georgia Press. [https://www.jstor.org/stable/j.ctt46njw5]
+
